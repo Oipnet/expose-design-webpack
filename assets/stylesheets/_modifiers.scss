@@ -1,0 +1,32 @@
+.has-icon-left {
+  & .input,
+  .button {
+    padding-left: 4rem !important;
+  }
+  & .icon.is-small {
+    margin-left: -28.8rem;
+    margin-bottom: 4px;
+  }
+}
+
+.icon {
+  display: inline-flex;
+  vertical-align: middle;
+
+  &.is-small {
+    font-size: 2rem;
+  }
+  &.is-large {
+    font-size: 3rem;
+  }
+}
+
+.card-content.is-hidden {
+  height: 0;
+  margin: 0 !important;
+  overflow: hidden;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}

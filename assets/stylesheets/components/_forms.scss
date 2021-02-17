@@ -1,0 +1,36 @@
+$input-background-color: $athens-gray;
+$input-placeholder-color: $chambray;
+
+.control {
+  & .input {
+    padding: 1rem 2rem 1rem;
+
+    width: 30rem;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    background-color: $input-background-color;
+
+    &::placeholder {
+      color: $input-placeholder-color;
+    }
+  }
+
+  & .icon i {
+    color: $input-placeholder-color;
+  }
+}
+
+.select {
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}

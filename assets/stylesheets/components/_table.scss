@@ -1,0 +1,55 @@
+.dataTable-top {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.table {
+  width: 100%;
+  margin: 1rem 0;
+
+  & thead tr {
+    background-color: $blue-haze;
+    font-weight: bold;
+
+    & th {
+      padding: 0.9rem;
+      text-align: left;
+    }
+
+    & th:nth-child(1) {
+      border-radius: 5px 0px 0px 0px;
+    }
+
+    & th:nth-last-child(1) {
+      border-radius: 0px 5px 0px 0px;
+    }
+  }
+
+  & tbody {
+    & tr td {
+      padding: 0.8rem;
+    }
+    & tr:nth-child(even) {
+      background-color: $athens-gray;
+    }
+  }
+}
+
+.dataTable-bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  & .dataTable-pagination .dataTable-pagination-list {
+    display: flex;
+
+    & li {
+      margin: 0.5rem;
+
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+}

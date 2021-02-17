@@ -1,0 +1,56 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid $blue-haze;
+  padding: 0.9rem 0;
+  cursor: pointer;
+
+  font-size: 1.8rem;
+
+  &.is-small {
+    padding: 0.6rem;
+  }
+
+  &.is-dashed {
+    border: 1px dashed $chambray;
+    color: $chambray;
+  }
+
+  &.is-primary {
+    background-color: $color-primary;
+    color: $white;
+
+    & .icon i {
+      color: $white;
+    }
+
+    &.is-dashed {
+      background-color: inherit;
+      color: $color-primary;
+      border-color: $color-primary;
+    }
+
+    &.is-outlined {
+      background-color: inherit;
+      color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+
+  &.is-icon {
+    border: none;
+  }
+
+  & span {
+    color: inherit;
+  }
+
+  & span:nth-child(1) {
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+  }
+  & span:nth-child(2) {
+    padding-right: 1rem;
+  }
+}

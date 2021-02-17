@@ -1,0 +1,67 @@
+.stepper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+  & .stepper-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+
+    &:not(:last-child)::before {
+      content: "";
+      height: 3px;
+      width: 50%; // make it 100% width so that it won't let any gap to be rendered in the ui
+      position: absolute;
+      top: 25%;
+      border-top: 1px dotted $color-primary;
+      transform: translateX(100%);
+    }
+
+    &.is-active,
+    &.is-checked {
+      font-weight: bold;
+      cursor: default;
+    }
+
+    &.is-active {
+      & .stepper-item-badge {
+        background-color: $color-primary;
+        color: $white;
+        border: 4px solid $white;
+        box-shadow: 0 0 0 2px $color-primary;
+      }
+    }
+
+    &.is-checked {
+      & .stepper-item-badge {
+        background-color: $color-primary;
+        color: $white;
+        border: 8px solid lighten($color-primary, 26%);
+
+        & i {
+          color: $white;
+        }
+      }
+    }
+
+    & .stepper-item-badge {
+      background-color: $white;
+      border-radius: 50%;
+      width: 4.4rem;
+      height: 4.4rem;
+      line-height: 4.4rem;
+      text-align: center;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .stepper-item-label {
+      margin-top: 0.9rem;
+    }
+  }
+}

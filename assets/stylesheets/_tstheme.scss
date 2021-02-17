@@ -1,0 +1,30 @@
+.ts-control {
+  display: inline-flex;
+  align-items: center;
+  width: 15rem !important;
+  background: transparent;
+
+  & .ts-input {
+    border: 0.2rem solid $white !important;
+    background: transparent !important;
+    box-shadow: none !important;
+
+    &.dropdown-active {
+      border: 0.2rem solid $blue-haze !important;
+    }
+  }
+
+  & .ts-dropdown {
+    border: 0.2rem solid $blue-haze;
+    border-top: 0;
+    margin-top: -0.6rem;
+  }
+}
+
+.language-option {
+  font-size: 1.8rem;
+
+  span:first-child {
+    margin-right: 1rem;
+  }
+}

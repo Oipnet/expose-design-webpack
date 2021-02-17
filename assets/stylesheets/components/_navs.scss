@@ -1,0 +1,101 @@
+$navbar-background-color: $white;
+$navbar-separator-color: $blue-haze;
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 7.5rem;
+  padding: 2rem 2.5rem;
+  padding-left: 20vw;
+  background-color: $navbar-background-color;
+
+  & .navbar-end,
+  .navbar-start {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  & .navbar-item {
+    display: inline-flex;
+    height: 100%;
+    color: $chambray;
+
+    &.has-dropdown {
+      display: inline-flex;
+      align-items: center;
+      font-size: 1.8rem;
+    }
+  }
+
+  & .navbar-separated .navbar-item:first-child {
+    padding-right: 2rem;
+    border-right: 0.2rem solid $navbar-separator-color;
+  }
+
+  & .navbar-separated .navbar-item:last-child {
+    padding-left: 2rem;
+    border: none;
+  }
+
+  & .navbar-separated .navbar-item {
+    padding: 0 2rem;
+    border-right: 0.2rem solid $navbar-separator-color;
+  }
+
+  & .profile-image {
+    border-radius: 50%;
+    height: inherit;
+    margin-right: 1.5rem;
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100vh;
+  width: 19vw;
+  padding: 2rem;
+
+  border-radius: 0 2.5rem 2.5rem 0;
+
+  z-index: 100;
+  background: transparent linear-gradient(192deg, #506EF0 0%, #0826AA 100%) 0% 0% no-repeat padding-box;
+
+  & .brand {
+    display: flex;
+    align-self: center;
+    width: 15rem;
+    margin-top: 2rem;
+  }
+
+  & .sidebar-nav {
+    margin-top: 3.5rem;
+
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    & .nav-item {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    & .sub-menu {
+      visibility: hidden;
+    }
+
+    i {
+      font-size: 3rem;
+      margin-right: 1rem;
+    }
+
+    a, i {
+      color: white;
+    }
+  }
+}

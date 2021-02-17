@@ -1,0 +1,27 @@
+@import "./variables";
+@import "./reset";
+@import "./fonts";
+@import "./modifiers";
+@import "./components/_container";
+@import "./components/_buttons";
+@import "./components/cards";
+@import "./components/_forms";
+@import "./components/_navs";
+@import "./components/_table";
+@import "./components/stepper";
+@import "./tstheme";
+@import "~flag-icon-css/css/flag-icon.min.css";
+@import "~tom-select/dist/css/tom-select.default.css";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: $blue-haze;
+}
+
+main {
+  margin-left: 20vw;
+}

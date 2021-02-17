@@ -1,0 +1,70 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+
+  &.is-fixed {
+    flex-wrap: wrap;
+
+    & .card {
+      max-width: 26rem;
+    }
+  }
+
+  & .card {
+    &.is-collapsable {
+      height: fit-content;
+
+      & i {
+        display: inline-block;
+        font-size: 1.8rem;
+        transition: transform $transition-time;
+      }
+
+      & i.reverse {
+        transform: rotate(180deg);
+      }
+    }
+
+    width: 100%;
+    background-color: $white;
+    border-radius: 5px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin-bottom: 1rem;
+
+    & > * {
+      padding: 0 1rem;
+    }
+
+    & .card-header {
+      line-height: 3.3rem;
+      border-bottom: 1px solid $athens-gray;
+      display: flex;
+      justify-content: space-between;
+
+      & .card-header-title {
+        padding-right: 1rem;
+      }
+
+      & a {
+        cursor: pointer;
+      }
+    }
+
+    & .card-content {
+      transition: all $transition-time;
+      margin: 3rem 0;
+    }
+
+    & .card-footer {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &.is-grow {
+      flex: 0 0 50%;
+    }
+  }
+}

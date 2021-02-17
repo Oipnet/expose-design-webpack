@@ -57,10 +57,19 @@ let config = {
     {
       test: /\.(png|svg|jpg)$/i,
       type: 'asset/resource',
-    }]
+    },
+    {
+      test: /\.(woff2?|eot|ttf|otf)$/,
+      loader: 'file-loader',
+      options: {
+          limit: 10000,
+          name: '[name].[hash:7].[ext]'
+      }
+   }]
   },
   plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin(), new HtmlWebpackPartialsPlugin([
     {path: path.join(__dirname, './partials/navbar.html')},
+    {path: path.join(__dirname, './partials/aside.html')},
   ])],
   devServer: {
     contentBase: path.resolve(__dirname, "./public"),

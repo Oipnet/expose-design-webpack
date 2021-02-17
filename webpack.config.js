@@ -107,6 +107,10 @@ let config = {
       filename: 'tables.html',
       template: 'src/templates/tables.html'
     }), 
+    new HtmlWebpackPlugin({
+      filename: 'tags.html',
+      template: 'src/templates/tags.html'
+    }), 
     new HtmlWebpackPartialsPlugin([
       {
         path: path.join(__dirname, './partials/navbar.html'),

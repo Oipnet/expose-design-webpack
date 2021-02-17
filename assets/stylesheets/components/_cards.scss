@@ -1,87 +1,71 @@
-.card-container {
-  display: flex;
-  flex-direction: row;
-  column-gap: 2.5rem;
-
-  margin-bottom: 1.5rem;
-
-  &.is-fixed {
-    flex-wrap: wrap;
-
-    & .card {
-      max-width: 26rem;
-    }
-  }
-
-  & .card {
-
-    &.is-jumbo {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      & .card-content {
-        flex-direction: column;
-      }
-    }
-
-    &.is-collapsable {
-      height: fit-content;
-
-      & i {
-        display: inline-block;
-        font-size: 1.8rem;
-        transition: transform $transition-time;
-      }
-
-      & i.reverse {
-        transform: rotate(180deg);
-      }
-    }
-
-    width: 100%;
-    min-height: 20rem;
-    background-color: $white;
-    border-radius: 5px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-
-    & > * {
-      padding: 0 1rem;
-    }
-
-    & .card-header {
-      line-height: 3.3rem;
-      border-bottom: 0.2rem solid $athens-gray;
-      padding: 1.3rem 1.5rem;
-      display: flex;
-      justify-content: space-between;
-
-      & .title {
-        margin: 0;
-      }
-
-      & a {
-        cursor: pointer;
-      }
-    }
+.card {
+  &.is-jumbo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     & .card-content {
-      transition: all $transition-time;
-      margin: 3rem 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    & .card-footer {
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    &.is-grow {
-      flex: 0 0 50%;
+      flex-direction: column;
     }
   }
+
+  &.is-collapsable {
+    height: fit-content;
+
+    & i {
+      display: inline-block;
+      font-size: 1.8rem;
+      transition: transform $transition-time;
+    }
+
+    & i.reverse {
+      transform: rotate(180deg);
+    }
+  }
+
+  width: 100%;
+  min-height: 20rem;
+  background-color: $white;
+  border-radius: 5px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  & > * {
+    padding: 0 1rem;
+  }
+
+  & .card-header {
+    line-height: 3.3rem;
+    border-bottom: 0.2rem solid $athens-gray;
+    padding: 1.3rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    & .title {
+      margin: 0;
+    }
+
+    & a {
+      cursor: pointer;
+    }
+  }
+
+  & .card-content {
+    transition: all $transition-time;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  & .card-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &.is-grow {
+    flex: 0 0 50%;
+    }
 }

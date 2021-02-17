@@ -1,3 +1,23 @@
 main.container {
   margin: 11rem 2rem 0 33.5rem;
 }
+
+.row {
+  display: flex;
+  column-gap: 2.5rem;
+  margin-bottom: 1.5rem;
+  
+  &.is-flex-wrap {
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+
+    & .card {
+      max-width: 40rem;
+    }
+  }
+
+  &.is-flex-wrap {
+    flex-wrap: wrap;
+  }
+}

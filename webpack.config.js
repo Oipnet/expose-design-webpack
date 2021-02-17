@@ -81,10 +81,45 @@ let config = {
       }
    }]
   },
-  plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin(), new HtmlWebpackPartialsPlugin([
-    {path: path.join(__dirname, './partials/navbar.html')},
-    {path: path.join(__dirname, './partials/aside.html')},
-  ])],
+  plugins: [
+    new MiniCssExtractPlugin(), 
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'src/templates/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'buttons.html',
+      template: 'src/templates/buttons.html'
+    }), 
+    new HtmlWebpackPlugin({
+      filename: 'cards.html',
+      template: 'src/templates/cards.html'
+    }), 
+    new HtmlWebpackPlugin({
+      filename: 'stepper.html',
+      template: 'src/templates/stepper.html'
+    }), 
+    new HtmlWebpackPlugin({
+      filename: 'tooltips.html',
+      template: 'src/templates/tooltips.html'
+    }), 
+    new HtmlWebpackPlugin({
+      filename: 'tables.html',
+      template: 'src/templates/tables.html'
+    }), 
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './partials/navbar.html'),
+        template_filename: '*',
+        priority: 'high'
+      },
+      {
+        path: path.join(__dirname, './partials/aside.html'),
+        template_filename: '*',
+        priority: 'high'
+      },
+    ])
+  ],
   devServer: {
     contentBase: path.resolve(__dirname, "./public"),
     historyApiFallback: true,

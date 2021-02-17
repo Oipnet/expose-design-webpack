@@ -1,5 +1,52 @@
-<nav>
-  <ul>
-    <li>Test</li>
-  </ul>
+<nav class="navbar">
+  <div class="navbar-start">
+    <div class="navbar-item">
+      <p class="control has-icon-left">
+        <input class="input" placeholder="Rechercher" type="text" />
+        <span class="icon is-small">
+          <i class="ri-search-2-line"></i>
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <div class="navbar-end navbar-separated">
+    <div class="navbar-item">
+      <button class="button is-primary">
+        <span class="icon is-small">
+          <i class="ri-add-line"></i>
+        </span>
+        <span>Créer une marketplace</span>
+      </button>
+    </div>
+
+    <div class="navbar-item">
+      <select id="language-select"></select>
+    </div>
+
+    <div class="navbar-item">
+      <a class="button is-icon">
+        <span class="icon is-large">
+          <i class="ri-mail-fill"></i>
+        </span>
+      </a>
+    </div>
+
+    <div class="navbar-item">
+      <a class="button is-icon">
+        <span class="icon is-large">
+          <i class="ri-notification-2-fill"></i>
+        </span>
+      </a>
+    </div>
+
+    <div class="navbar-item has-dropdown">
+      <img
+        class="profile-image"
+        src="./profile-placeholder.jpg"
+        alt="Jon Smith profile photo"
+      />
+      <span>Jon Smith</span>
+    </div>
+  </div>
 </nav>

@@ -1,8 +1,17 @@
 require('../assets/stylesheets/main.scss');
 
 import TomSelect from 'tom-select';
+import { collapse } from './components/card';
+import { datatable } from './components/table';
+import { tooltip } from './components/tooltip';
 
-new TomSelect('#language-select', {
+collapse();
+datatable('.is-datatable', {
+  searchable: true,
+  sortable: true,
+});
+
+/*new TomSelect('#language-select', {
   create: false,
   valueField: 'id',
   items: [1],
@@ -32,4 +41,4 @@ new TomSelect('#language-select', {
       );
     },
   },
-});
+});*/

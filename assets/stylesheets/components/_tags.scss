@@ -50,4 +50,11 @@
             color: inherit;
         }
     }
+    &.is-dark-blue {
+        color: $corn-flower-blue;
+        background-color: rgba($corn-flower-blue, 0.2);
+        & i {
+            color: inherit;
+        }
+    }
 }

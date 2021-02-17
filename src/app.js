@@ -13,7 +13,7 @@ datatable('.is-datatable', {
   sortable: true,
 });
 
-/*new TomSelect('#language-select', {
+new TomSelect('#language-select', {
   create: false,
   valueField: 'id',
   items: [1],
@@ -43,4 +43,4 @@ datatable('.is-datatable', {
       );
     },
   },
-});*/
+});

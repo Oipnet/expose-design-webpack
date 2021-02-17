@@ -103,6 +103,10 @@ let config = {
       filename: 'tooltips.html',
       template: 'src/templates/tooltips.html'
     }), 
+    new HtmlWebpackPlugin({
+      filename: 'tables.html',
+      template: 'src/templates/tables.html'
+    }), 
     new HtmlWebpackPartialsPlugin([
       {
         path: path.join(__dirname, './partials/navbar.html'),

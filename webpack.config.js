@@ -55,7 +55,21 @@ let config = {
       ]
     },
     {
-      test: /\.(png|svg|jpg)$/i,
+      test: /\.(png|jpg)$/i,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'images/',
+            publicPath: 'images/',
+            postTransformPublicPath: (p) => `__webpack_public_path__ + ${p}`,
+          },
+        },
+      ],
+    },
+    {
+      test: /\.(svg)$/i,
       type: 'asset/resource',
     },
     {

@@ -1,4 +1,6 @@
 require('../assets/stylesheets/main.scss');
+import profile from '../assets/images/profile-placeholder.jpg';
+import logo from '../assets/images/logo.png';
 
 import TomSelect from 'tom-select';
 import { collapse } from './components/card';

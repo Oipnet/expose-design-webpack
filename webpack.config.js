@@ -20,11 +20,19 @@ let config = {
     {
       test: /\.scss$/,
       use: [
-        MiniCssExtractPlugin.loader, {
+        {
+          loader: MiniCssExtractPlugin.loader,
+          options: {
+            publicPath: (resourcePath, context) => {
+              return path.relative(path.dirname(resourcePath), context) + '/';
+            },
+          },
+        },
+        {
           loader: 'css-loader',
           options: {
             importLoaders: 2,
-            sourceMap: true
+            sourceMap: true,
           },
         },
         {
@@ -45,6 +53,10 @@ let config = {
           },
         }
       ]
+    },
+    {
+      test: /\.(png|svg|jpg)$/i,
+      type: 'asset/resource',
     }]
   },
   plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin(), new HtmlWebpackPartialsPlugin([

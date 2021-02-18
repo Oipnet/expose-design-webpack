@@ -28,5 +28,9 @@
 }
 
 .mb-2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0 !important;
 }

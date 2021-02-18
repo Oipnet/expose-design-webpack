@@ -66,7 +66,7 @@ $navbar-separator-color: $blue-haze;
   width: 32rem;
   height: 100vh;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 1rem 2rem 2rem;
   background: transparent linear-gradient(192deg, #506ef0 0%, #0826aa 100%) 0% 0% no-repeat padding-box;
 
   border-radius: 0 2.5rem 2.5rem 0;
@@ -77,37 +77,45 @@ $navbar-separator-color: $blue-haze;
     align-self: center;
     margin-top: 2rem;
   }
+}
 
-  .sidebar-nav {
-    margin-top: 3.5rem;
+.sidebar-nav {
+  margin-top: 3.5rem;
 
-    font-size: 2.4rem;
-    font-weight: 600;
+  font-size: 2rem;
+  font-weight: 600;
 
-    .nav-item {
-      display: inline-flex;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-bottom: 2rem;
+  .nav-item {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2rem;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
+    &:last-child {
+      margin-bottom: 0;
     }
 
-    .sub-menu {
-      visibility: hidden;
-    }
-
-    i {
-      margin-right: 1rem;
-      font-size: 3rem;
-      font-weight: 500;
-    }
-
-    a,
-    i {
+    .button.is-link {
+      font-size: 1.8rem;
+      font-weight: 700;
+      justify-content: space-between;
+      width: 100%;
       color: $white;
     }
+  }
+
+  .sub-menu {
+    visibility: hidden;
+  }
+
+  i {
+    margin-right: 1rem;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  a,
+  i {
+    color: $white;
   }
 }

@@ -42,8 +42,13 @@
     border: 0;
   }
 
+  &.is-link {
+    background: none;
+    border: 0;
+    padding: 0;
+  }
+
   span {
-    padding: 0 0.2rem;
     color: inherit;
   }
 }

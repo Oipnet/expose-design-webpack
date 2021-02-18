@@ -14,6 +14,10 @@
   display: inline-flex;
   vertical-align: middle;
 
+  &.is-arrow i {
+    margin: 0;
+  }
+
   &.is-small {
     font-size: 2rem;
   }

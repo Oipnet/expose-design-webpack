@@ -7,7 +7,7 @@ $input-placeholder-color: $chambray;
     width: 30rem;
     height: 100%;
     padding: 1rem 2rem;
-    border: none;
+    border: 0;
     background-color: $input-background-color;
     border-radius: 5px;
     font-size: 1.6rem;
@@ -26,7 +26,7 @@ $input-placeholder-color: $chambray;
 .select {
   width: 100%;
   padding: 0 1em 0 0;
-  border: none;
+  border: 0;
   margin: 0;
   background-color: transparent;
   cursor: inherit;

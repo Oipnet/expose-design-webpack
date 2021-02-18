@@ -39,7 +39,7 @@ $navbar-separator-color: $blue-haze;
 
   .navbar-separated .navbar-item:last-child {
     padding-left: 2rem;
-    border: none;
+    border: 0;
   }
 
   .navbar-separated .navbar-item {
@@ -107,7 +107,7 @@ $navbar-separator-color: $blue-haze;
 
     a,
     i {
-      color: white;
+      color: $white;
     }
   }
 }

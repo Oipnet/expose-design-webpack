@@ -1,28 +1,28 @@
-require('../assets/stylesheets/main.scss');
-import profile from '../assets/images/profile-placeholder.jpg';
-import logo from '../assets/images/logo.png';
+require("../assets/stylesheets/main.scss");
+import profile from "../assets/images/profile-placeholder.jpg";
+import logo from "../assets/images/logo.png";
 
-import TomSelect from 'tom-select';
-import { collapse } from './components/collapse';
-import { datatable } from './components/table';
-import { tooltip } from './components/tooltip';
+import TomSelect from "tom-select";
+import { collapse } from "./components/collapse";
+import { datatable } from "./components/table";
+import { tooltip } from "./components/tooltip";
 
 collapse();
 
-datatable('.is-datatable', {
+datatable(".is-datatable", {
   searchable: true,
   sortable: true,
 });
 
-new TomSelect('#language-select', {
+new TomSelect("#language-select", {
   create: false,
-  valueField: 'id',
+  valueField: "id",
   items: [1],
-  controlInput: '<input/>',
+  controlInput: "<input/>",
   hideSelected: true,
   options: [
-    { id: 1, option: 'Français', flag: 'fr' },
-    { id: 2, option: 'English', flag: 'gb' },
+    { id: 1, option: "Français", flag: "fr" },
+    { id: 2, option: "English", flag: "gb" },
   ],
   render: {
     option(data, escape) {

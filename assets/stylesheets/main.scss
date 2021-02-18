@@ -1,26 +1,26 @@
-@import "./variables";
-@import "./reset";
-@import "./fonts";
-@import "./modifiers";
-@import "./components/_layouts";
-@import "./components/_buttons";
-@import "./components/cards";
-@import "./components/_forms";
-@import "./components/_navs";
-@import "./components/_table";
-@import "./components/tags";
-@import "./components/typography";
-@import "./components/stepper";
-@import "./tstheme";
-@import "~remixicon/fonts/remixicon.css";
-@import "~flag-icon-css/css/flag-icon.min.css";
-@import "~tom-select/dist/css/tom-select.default.css";
+@import './variables';
+@import './reset';
+@import './fonts';
+@import './modifiers';
+@import './components/_layouts';
+@import './components/_buttons';
+@import './components/cards';
+@import './components/_forms';
+@import './components/_navs';
+@import './components/_table';
+@import './components/tags';
+@import './components/typography';
+@import './components/stepper';
+@import './tstheme';
+@import '~remixicon/fonts/remixicon.css';
+@import '~flag-icon-css/css/flag-icon.min.css';
+@import '~tom-select/dist/css/tom-select.default.css';
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-size: 1.6rem;
   background-color: $blue-haze;
+  font-size: 1.6rem;
 }

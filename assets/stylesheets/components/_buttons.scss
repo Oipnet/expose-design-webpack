@@ -1,9 +1,9 @@
 .button {
   display: inline-flex;
   align-items: center;
-  border-radius: 5px;
-  border: 1px solid $blue-haze;
   padding: 1rem;
+  border: 1px solid $blue-haze;
+  border-radius: 5px;
   cursor: pointer;
 
   font-size: 1.6rem;
@@ -26,15 +26,15 @@
     }
 
     &.is-dashed {
+      border-color: $color-primary;
       background-color: inherit;
       color: $color-primary;
-      border-color: $color-primary;
     }
 
     &.is-outlined {
+      border-color: $color-primary;
       background-color: inherit;
       color: $color-primary;
-      border-color: $color-primary;
     }
   }
 
@@ -43,7 +43,7 @@
   }
 
   & span {
-    color: inherit;
     padding: 0 0.2rem;
+    color: inherit;
   }
 }

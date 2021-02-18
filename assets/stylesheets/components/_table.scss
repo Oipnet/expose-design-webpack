@@ -18,11 +18,11 @@
     }
 
     & th:nth-child(1) {
-      border-radius: 5px 0px 0px 0px;
+      border-radius: 5px 0 0;
     }
 
     & th:nth-last-child(1) {
-      border-radius: 0px 5px 0px 0px;
+      border-radius: 0 5px 0 0;
     }
   }
 
@@ -30,6 +30,7 @@
     & tr td {
       padding: 0.8rem;
     }
+
     & tr:nth-child(even) {
       background-color: $athens-gray;
     }

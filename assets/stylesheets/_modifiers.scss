@@ -3,9 +3,10 @@
   .button {
     padding-left: 4rem !important;
   }
+
   & .icon.is-small {
-    margin-left: -29.4rem;
     margin-bottom: 4px;
+    margin-left: -29.4rem;
   }
 }
 
@@ -16,15 +17,16 @@
   &.is-small {
     font-size: 2rem;
   }
+
   &.is-large {
     font-size: 3rem;
   }
 }
 
 .card-content.is-hidden {
+  overflow: hidden;
   height: 0;
   margin: 0 !important;
-  overflow: hidden;
 }
 
 .mb-2 {

@@ -1,67 +1,80 @@
 .tag {
-    padding: 0.4rem 0.8rem;
-    border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+
+  &.is-small {
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 1.3rem;
+  }
+
+  &.is-medium {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  &.is-large {
+    padding: 1rem 2rem;
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+
+  &.is-rounded {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
 
     &.is-small {
-        font-size: 1.3rem;
-        padding: 0.2rem 0.4rem;
-        border-radius: 0.25rem;
+      width: 1rem;
+      height: 1rem;
     }
-    &.is-medium {
-        font-size: 1.6rem;
-        font-weight: 700;
-    }
-    &.is-large {
-        font-size: 2.3rem;
-        font-weight: 700;
-        padding: 1rem 2rem;
-    }
-    &.is-rounded {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        border-radius: 50%;
 
-        &.is-small {
-            width: 1rem;
-            height: 1rem;
-        }
-        &.is-medium {
-            width: 2.5rem;
-            height: 2.5rem;
-        }
-        &.is-large {
-            width: 5rem;
-            height: 5rem;
-        }
+    &.is-medium {
+      width: 2.5rem;
+      height: 2.5rem;
     }
-    &.is-red {
-        color: $radical-red;
-        background-color: rgba($radical-red, 0.2);
-        & i {
-            color: inherit;
-        }
+
+    &.is-large {
+      width: 5rem;
+      height: 5rem;
     }
-    &.is-orange {
-        color: $orange;
-        background-color: rgba($orange, 0.2);
-        & i {
-            color: inherit;
-        }
+  }
+
+  &.is-red {
+    background-color: rgba($radical-red, 0.2);
+    color: $radical-red;
+
+    & i {
+      color: inherit;
     }
-    &.is-blue {
-        color: $dodger-blue;
-        background-color: rgba($dodger-blue, 0.2);
-        & i {
-            color: inherit;
-        }
+  }
+
+  &.is-orange {
+    background-color: rgba($orange, 0.2);
+    color: $orange;
+
+    & i {
+      color: inherit;
     }
-    &.is-dark-blue {
-        color: $corn-flower-blue;
-        background-color: rgba($corn-flower-blue, 0.2);
-        & i {
-            color: inherit;
-        }
+  }
+
+  &.is-blue {
+    background-color: rgba($dodger-blue, 0.2);
+    color: $dodger-blue;
+
+    & i {
+      color: inherit;
     }
+  }
+
+  &.is-dark-blue {
+    background-color: rgba($corn-flower-blue, 0.2);
+    color: $corn-flower-blue;
+
+    & i {
+      color: inherit;
+    }
+  }
 }

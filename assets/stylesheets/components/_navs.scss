@@ -5,10 +5,10 @@ $navbar-separator-color: $blue-haze;
   position: fixed;
   top: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100vw;
   height: 8rem;
+  align-items: center;
+  justify-content: space-between;
   padding: 2rem 2.5rem;
   padding-left: 33.5rem;
   background-color: $navbar-background-color;
@@ -16,8 +16,8 @@ $navbar-separator-color: $blue-haze;
   & .navbar-end,
   .navbar-start {
     display: inline-flex;
-    align-items: center;
     height: 100%;
+    align-items: center;
   }
 
   & .navbar-item {
@@ -48,33 +48,33 @@ $navbar-separator-color: $blue-haze;
   }
 
   & .profile-image {
-    border-radius: 50%;
-    height: inherit;
-    margin-right: 1.5rem;
     width: 5rem;
+    height: inherit;
     height: 5rem;
+    margin-right: 1.5rem;
+    border-radius: 50%;
   }
 }
 
 .sidebar {
-  display: flex;
-  flex-direction: column;
   position: absolute;
+
+  z-index: 100;
   top: 0;
   left: 0;
-  height: 100vh;
+  display: flex;
   width: 32rem;
+  height: 100vh;
+  flex-direction: column;
   padding: 2rem;
+  background: transparent linear-gradient(192deg, #506ef0 0%, #0826aa 100%) 0% 0% no-repeat padding-box;
 
   border-radius: 0 2.5rem 2.5rem 0;
 
-  z-index: 100;
-  background: transparent linear-gradient(192deg, #506EF0 0%, #0826AA 100%) 0% 0% no-repeat padding-box;
-
   & .brand {
     display: flex;
-    align-self: center;
     width: 15rem;
+    align-self: center;
     margin-top: 2rem;
   }
 
@@ -86,8 +86,8 @@ $navbar-separator-color: $blue-haze;
 
     & .nav-item {
       display: inline-flex;
-      align-items: center;
       flex-wrap: wrap;
+      align-items: center;
       margin-bottom: 2rem;
 
       &:last-child {
@@ -100,12 +100,13 @@ $navbar-separator-color: $blue-haze;
     }
 
     i {
+      margin-right: 1rem;
       font-size: 3rem;
       font-weight: 500;
-      margin-right: 1rem;
     }
 
-    a, i {
+    a,
+    i {
       color: white;
     }
   }

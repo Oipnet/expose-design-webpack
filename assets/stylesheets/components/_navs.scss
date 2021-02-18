@@ -25,12 +25,50 @@ $navbar-separator-color: $blue-haze;
     height: 100%;
     color: $chambray;
 
-    &.has-dropdown {
+    &#profile {
       display: inline-flex;
       align-items: center;
       font-size: 1.8rem;
+      border-right: 0;
+      cursor: pointer;
+
+      .icon {
+        margin-left: 2rem;
+      }
     }
   }
+
+  .tippy-box[data-theme~='profile'] {
+    background-color: $white;
+    color: $chambray;
+    padding: 0.5rem;
+    width: 20rem;
+    box-shadow: 0px 0px 10px #00000029;
+    font-size: 1.6rem;
+
+    .tippy-svg-arrow {
+      fill: $white;
+    }
+
+    hr {
+      border: 0;
+      border-bottom: 0.2rem solid $athens-gray;
+      margin: .8rem 0;
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+
+      label {
+        margin-left: 2rem;
+      }
+    }
+   }
 
   .navbar-separated .navbar-item:first-child {
     padding-right: 2rem;

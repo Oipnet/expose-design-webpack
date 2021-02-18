@@ -6,12 +6,36 @@ import TomSelect from "tom-select";
 import { collapse } from "./components/collapse";
 import { datatable } from "./components/table";
 import { tooltip } from "./components/tooltip";
+import tippy, { roundArrow } from "tippy.js";
 
 collapse();
 
 datatable(".is-datatable", {
   searchable: true,
   sortable: true,
+});
+
+tippy('#profile', {
+  theme: 'profile',
+  content: `
+    <ul>
+     <li><a>Mon compte</a></li>
+     <hr>
+     <li>
+      <a>Thème light</a>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+     </li>
+     <hr>
+     <li><a>Déconnexion</a></li> 
+    </ul>
+  `,
+  arrow: roundArrow,
+  interactive: true,
+  allowHTML: true,
+  trigger: 'click',
 });
 
 new TomSelect("#language-select", {

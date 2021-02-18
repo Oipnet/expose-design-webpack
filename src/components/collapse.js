@@ -1,6 +1,5 @@
 const collapse = (selector = '.is-collapse') => {
   const elements = [...document.querySelectorAll(selector)];
-  console.log(elements);
 
   elements.map((element) => {
     const target = element.querySelector(element.dataset.target);
@@ -11,8 +10,6 @@ const collapse = (selector = '.is-collapse') => {
       e.preventDefault();
 
       target.classList.toggle('is-hidden');
-      console.log(target);
-      console.log(arrow);
       arrow.classList.toggle('reverse');
     });
   });

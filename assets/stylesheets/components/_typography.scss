@@ -10,11 +10,20 @@
     &.is-2 {
         font-size: 1.8rem;
     }
+    &.is-large {
+        font-size: 3.2rem;
+    }
     &.is-jumbo {
         font-size: 4.2rem;
         margin-bottom: 0.5rem;
     }
     &.is-thin {
         font-weight: 400;
+    }
+    &.is-light {
+        font-weight: 300;
+    }
+    &.has-no-margin {
+        margin: 0;
     }
 }

@@ -4,7 +4,7 @@
   align-items: center;
   background: transparent;
 
-  & .ts-input {
+  .ts-input {
     border: 0.2rem solid $white !important;
     background: transparent !important;
     box-shadow: none !important;
@@ -14,7 +14,7 @@
     }
   }
 
-  & .ts-dropdown {
+  .ts-dropdown {
     border: 0.2rem solid $blue-haze;
     border-top: 0;
   }

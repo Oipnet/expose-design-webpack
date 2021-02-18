@@ -13,14 +13,14 @@ $navbar-separator-color: $blue-haze;
   padding-left: 33.5rem;
   background-color: $navbar-background-color;
 
-  & .navbar-end,
+  .navbar-end,
   .navbar-start {
     display: inline-flex;
     height: 100%;
     align-items: center;
   }
 
-  & .navbar-item {
+  .navbar-item {
     display: inline-flex;
     height: 100%;
     color: $chambray;
@@ -32,22 +32,22 @@ $navbar-separator-color: $blue-haze;
     }
   }
 
-  & .navbar-separated .navbar-item:first-child {
+  .navbar-separated .navbar-item:first-child {
     padding-right: 2rem;
     border-right: 0.2rem solid $navbar-separator-color;
   }
 
-  & .navbar-separated .navbar-item:last-child {
+  .navbar-separated .navbar-item:last-child {
     padding-left: 2rem;
     border: none;
   }
 
-  & .navbar-separated .navbar-item {
+  .navbar-separated .navbar-item {
     padding: 0 2rem;
     border-right: 0.2rem solid $navbar-separator-color;
   }
 
-  & .profile-image {
+  .profile-image {
     width: 5rem;
     height: inherit;
     height: 5rem;
@@ -71,20 +71,20 @@ $navbar-separator-color: $blue-haze;
 
   border-radius: 0 2.5rem 2.5rem 0;
 
-  & .brand {
+  .brand {
     display: flex;
     width: 15rem;
     align-self: center;
     margin-top: 2rem;
   }
 
-  & .sidebar-nav {
+  .sidebar-nav {
     margin-top: 3.5rem;
 
     font-size: 2.4rem;
     font-weight: 600;
 
-    & .nav-item {
+    .nav-item {
       display: inline-flex;
       flex-wrap: wrap;
       align-items: center;
@@ -95,7 +95,7 @@ $navbar-separator-color: $blue-haze;
       }
     }
 
-    & .sub-menu {
+    .sub-menu {
       visibility: hidden;
     }
 

@@ -21,7 +21,7 @@
     background-color: $color-primary;
     color: $white;
 
-    & .icon i {
+    .icon i {
       color: $white;
     }
 
@@ -42,7 +42,7 @@
     border: none;
   }
 
-  & span {
+  span {
     padding: 0 0.2rem;
     color: inherit;
   }

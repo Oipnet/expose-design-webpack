@@ -3,7 +3,7 @@
   width: 100%;
   justify-content: space-around;
 
-  & .stepper-item {
+  .stepper-item {
     position: relative;
     display: flex;
     width: 100%;
@@ -28,7 +28,7 @@
     }
 
     &.is-active {
-      & .stepper-item-badge {
+      .stepper-item-badge {
         border: 4px solid $white;
         background-color: $color-primary;
         box-shadow: 0 0 0 2px $color-primary;
@@ -37,18 +37,18 @@
     }
 
     &.is-checked {
-      & .stepper-item-badge {
+      .stepper-item-badge {
         border: 8px solid lighten($color-primary, 26%);
         background-color: $color-primary;
         color: $white;
 
-        & i {
+        i {
           color: $white;
         }
       }
     }
 
-    & .stepper-item-badge {
+    .stepper-item-badge {
       display: inline-flex;
       width: 4.4rem;
       height: 4.4rem;
@@ -60,7 +60,7 @@
       text-align: center;
     }
 
-    & .stepper-item-label {
+    .stepper-item-label {
       margin-top: 0.9rem;
     }
   }

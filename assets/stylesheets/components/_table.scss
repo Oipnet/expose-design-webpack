@@ -8,30 +8,30 @@
   width: 100%;
   margin: 1rem 0;
 
-  & thead tr {
+  thead tr {
     background-color: $blue-haze;
     font-weight: bold;
 
-    & th {
+    th {
       padding: 0.9rem;
       text-align: left;
     }
 
-    & th:nth-child(1) {
+    th:nth-child(1) {
       border-radius: 5px 0 0;
     }
 
-    & th:nth-last-child(1) {
+    th:nth-last-child(1) {
       border-radius: 0 5px 0 0;
     }
   }
 
-  & tbody {
-    & tr td {
+  tbody {
+    tr td {
       padding: 0.8rem;
     }
 
-    & tr:nth-child(even) {
+    tr:nth-child(even) {
       background-color: $athens-gray;
     }
   }
@@ -42,10 +42,10 @@
   flex-direction: row-reverse;
   justify-content: space-between;
 
-  & .dataTable-pagination .dataTable-pagination-list {
+  .dataTable-pagination .dataTable-pagination-list {
     display: flex;
 
-    & li {
+    li {
       margin: 0.5rem;
 
       &.active {

@@ -3,11 +3,12 @@ import profile from '../assets/images/profile-placeholder.jpg';
 import logo from '../assets/images/logo.png';
 
 import TomSelect from 'tom-select';
-import { collapse } from './components/card';
+import { collapse } from './components/collapse';
 import { datatable } from './components/table';
 import { tooltip } from './components/tooltip';
 
 collapse();
+
 datatable('.is-datatable', {
   searchable: true,
   sortable: true,

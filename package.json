@@ -33,6 +33,7 @@
   },
   "scripts": {
     "dev": "webpack serve --config webpack.config.js --progress --profile --content-base public/",
-    "style-lint": "stylelint '**/*.scss'"
+    "lint": "stylelint '**/*.scss'",
+    "lint:fix": "stylelint '**/*.scss' --fix"
   }
 }

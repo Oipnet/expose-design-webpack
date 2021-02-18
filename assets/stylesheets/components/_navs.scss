@@ -102,10 +102,31 @@ $navbar-separator-color: $blue-haze;
       font-size: 1.8rem;
       font-weight: 700;
     }
+
+    .is-arrow.reverse {
+      transform: rotate(90deg);
+    }
   }
 
   .sub-menu {
-    visibility: hidden;
+    margin: 2rem 0 2rem 4rem;
+
+    &.is-hidden {
+      visibility: hidden;
+    }
+
+    .sub-item {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    li {
+      margin-bottom: 2rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   i {

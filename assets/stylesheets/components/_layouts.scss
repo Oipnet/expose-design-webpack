@@ -2,6 +2,35 @@ main.container {
   margin: 11rem 2rem 0 33.5rem;
 }
 
+.columns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  &.is-centered {
+    justify-content: center;
+    align-items: center;
+
+    & .column {
+      margin-right: 2rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+
+  & .row:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .row {
   display: flex;
   column-gap: 2.5rem;
@@ -19,5 +48,9 @@ main.container {
 
   &.is-flex-wrap {
     flex-wrap: wrap;
+  }
+
+  &.is-centered {
+    justify-content: center;
   }
 }

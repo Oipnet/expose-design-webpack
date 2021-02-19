@@ -168,10 +168,6 @@ $navbar-separator-color: $blue-haze;
       font-weight: 700;
     }
 
-    .is-arrow.reverse {
-      transform: rotate(90deg);
-    }
-
     &.is-active {
       background-color: rgba($white, 0.3);
       border-radius: 0.5rem;

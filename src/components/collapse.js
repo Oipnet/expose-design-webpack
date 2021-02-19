@@ -3,14 +3,22 @@ const collapse = (selector = '.is-collapse') => {
 
   elements.map((element) => {
     const target = element.querySelector(element.dataset.target);
-    const activator = element.querySelector(element.dataset.activator);
     const arrow = element.querySelector(element.dataset.arrow);
+    const arrowRotation = element.dataset.arrowRotation ? element.dataset.arrowRotation : 'right';
 
-    activator.addEventListener('click', (e) => {
-      e.preventDefault();
+    let activatorClasses = element.dataset.activator.split(',');
+    let activators = [];
+    activatorClasses.forEach(activatorClass => {
+      activators.push(element.querySelector('.' + activatorClass));
+    });
 
-      target.classList.toggle('is-hidden');
-      arrow.classList.toggle('reverse');
+    activators.forEach(activator => {
+      activator.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        target.classList.toggle('is-hidden');
+        arrow.classList.toggle('rotate-' + arrowRotation);
+      });
     });
   });
 };

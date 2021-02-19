@@ -14,8 +14,16 @@
   display: inline-flex;
   vertical-align: middle;
 
-  &.is-arrow i {
-    margin: 0;
+  &.is-arrow { 
+    i {
+      margin: 0;
+    }
+    &.rotate-right i {
+      transform: rotate(90deg);
+    }
+    &.rotate-left i {
+      transform: rotate(-90deg);
+    }
   }
 
   &.is-small {

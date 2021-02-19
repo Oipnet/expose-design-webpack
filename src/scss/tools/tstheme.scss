@@ -10,12 +10,12 @@
     box-shadow: none !important;
 
     &.dropdown-active {
-      border: 0.2rem solid $blue-haze !important;
+      border: 0.2rem solid $light-gray !important;
     }
   }
 
   .ts-dropdown {
-    border: 0.2rem solid $blue-haze;
+    border: 0.2rem solid $light-gray;
     border-top: 0;
   }
 }

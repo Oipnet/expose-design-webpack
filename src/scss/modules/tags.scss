@@ -43,8 +43,8 @@
   }
 
   &.is-red {
-    background-color: rgba($radical-red, 0.2);
-    color: $radical-red;
+    background-color: rgba($red, 0.2);
+    color: $red;
 
     i {
       color: inherit;
@@ -61,8 +61,8 @@
   }
 
   &.is-blue {
-    background-color: rgba($dodger-blue, 0.2);
-    color: $dodger-blue;
+    background-color: rgba($light-blue, 0.2);
+    color: $light-blue;
 
     i {
       color: inherit;
@@ -70,8 +70,8 @@
   }
 
   &.is-dark-blue {
-    background-color: rgba($corn-flower-blue, 0.2);
-    color: $corn-flower-blue;
+    background-color: rgba($blue, 0.2);
+    color: $blue;
 
     i {
       color: inherit;

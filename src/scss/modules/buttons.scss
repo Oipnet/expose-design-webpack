@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: center;
   padding: 1rem;
-  border: 1px solid $blue-haze;
+  border: 1px solid $light-gray;
   border-radius: 5px;
   cursor: pointer;
 
@@ -13,8 +13,8 @@
   }
 
   &.is-dashed {
-    border: 1px dashed $chambray;
-    color: $chambray;
+    border: 1px dashed $dark-blue;
+    color: $dark-blue;
   }
 
   &.is-primary {

@@ -1,5 +1,5 @@
-$input-background-color: $athens-gray;
-$input-placeholder-color: $chambray;
+$input-background-color: $light-gray;
+$input-placeholder-color: $dark-blue;
 
 .control {
   .input {
@@ -54,7 +54,7 @@ $input-placeholder-color: $chambray;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: $athens-gray;
+  background-color: $light-gray;
   border-radius: 3.4rem;
   cursor: pointer;
   transition: .4s;
@@ -73,7 +73,7 @@ $input-placeholder-color: $chambray;
 }
 
 input:checked + .slider {
-  background-color: $mountain-meadow;
+  background-color: $green;
 
   &::before {
     transform: translateX(1.7rem);
@@ -81,5 +81,5 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 0.1rem $mountain-meadow;
+  box-shadow: 0 0 0.1rem $green;
 }

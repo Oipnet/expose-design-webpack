@@ -17,6 +17,7 @@ datatable(".is-datatable", {
 
 tippy('#profile', {
   theme: 'profile',
+  appendTo: document.getElementById('profile'),
   content: `
     <ul>
      <li><a>Mon compte</a></li>

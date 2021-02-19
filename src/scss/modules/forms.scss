@@ -15,6 +15,8 @@ $input-placeholder-color: $dark-blue;
 
     &::placeholder {
       color: $input-placeholder-color;
+      font-weight: 400;
+      opacity: 1;
     }
   }
 

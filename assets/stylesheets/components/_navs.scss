@@ -121,14 +121,14 @@ $navbar-separator-color: $blue-haze;
 }
 
 .sidebar {
-  position: absolute;
+  position: fixed;
 
   z-index: 100;
   top: 0;
   left: 0;
   display: flex;
   width: 32rem;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   padding: 1rem;
   background: transparent linear-gradient(192deg, #506ef0 0%, #0826aa 100%) 0% 0% no-repeat padding-box;

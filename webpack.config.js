@@ -96,6 +96,10 @@ let config = {
       template: 'src/templates/cards.html'
     }), 
     new HtmlWebpackPlugin({
+      filename: 'forms.html',
+      template: 'src/templates/forms.html'
+    }), 
+    new HtmlWebpackPlugin({
       filename: 'stepper.html',
       template: 'src/templates/stepper.html'
     }), 

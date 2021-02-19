@@ -1,28 +1,70 @@
 $input-background-color: $light-gray;
 $input-placeholder-color: $dark-blue;
 
-.control {
-  .input {
+.control.has-icon-right {
+  .icon {
+    position: relative;
+    z-index: 100;
+    margin-left: -3.5rem;
+  }
+}
 
-    width: 30rem;
-    height: 100%;
-    padding: 1rem 2rem;
-    border: 0;
-    background-color: $input-background-color;
-    border-radius: 5px;
-    font-size: 1.6rem;
-    font-weight: 300;
+.label {
+  margin-bottom: 0.5rem;
+  color: $dark-blue;
 
-    &::placeholder {
-      color: $input-placeholder-color;
-      font-weight: 400;
-      opacity: 1;
+  &.has-icon-right {
+    i {
+      margin-left: 0.5rem;
     }
   }
-
-  .icon i {
-    color: $input-placeholder-color;
+  i {
+    font-size: 1.8rem;
+    vertical-align: middle;
   }
+}
+
+.is-file {
+  position: relative;
+  display: inline-block;
+  height: 4rem;
+
+  .input[type='file'] {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+  }
+}
+
+.input {
+  width: 30rem;
+  padding: 1rem 2rem;
+  border: 0.1rem solid $border-gray;
+  background-color: $white;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 300;
+
+  &::placeholder {
+    color: $input-placeholder-color;
+    font-weight: 400;
+    opacity: 1;
+  }
+}
+
+.search {
+  height: 100%;
+  border: 0;
+  background-color: $light-gray;
+}
+
+.icon i {
+  color: $input-placeholder-color;
 }
 
 .select {

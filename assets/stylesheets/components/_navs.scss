@@ -28,8 +28,8 @@ $navbar-separator-color: $blue-haze;
     &#profile {
       display: inline-flex;
       align-items: center;
-      font-size: 1.8rem;
       cursor: pointer;
+      font-size: 1.8rem;
 
       .icon {
         margin-left: 2rem;
@@ -50,13 +50,13 @@ $navbar-separator-color: $blue-haze;
 
     &.unread ::before {
       display: inline-block;
-      content: '';
       width: 0.7rem;
       height: 0.7rem;
-      border-radius: 50%;
-      background-color: $corn-flower-blue;
-      vertical-align: middle;
       margin-right: 1rem;
+      background-color: $corn-flower-blue;
+      border-radius: 50%;
+      content: '';
+      vertical-align: middle;
     }
 
     &.read {
@@ -65,11 +65,11 @@ $navbar-separator-color: $blue-haze;
   }
 
   .tippy-box[data-theme~='light'] {
-    background-color: $white;
-    color: $chambray;
-    padding: 0.5rem;
     width: 20rem;
-    box-shadow: 0px 0px 10px #00000029;
+    padding: 0.5rem;
+    background-color: $white;
+    box-shadow: 0 0 10px #00000029;
+    color: $chambray;
     font-size: 1.6rem;
 
     .tippy-svg-arrow {
@@ -151,10 +151,10 @@ $navbar-separator-color: $blue-haze;
 
   .nav-item {
     display: inline-flex;
+    width: 100%;
     flex-wrap: wrap;
     align-items: center;
     padding: 1rem;
-    width: 100%;
 
     &:last-child {
       margin-bottom: 0;

@@ -1,4 +1,4 @@
-require("../assets/stylesheets/main.scss");
+import './scss/app.scss';
 import profile from "../assets/images/profile-placeholder.jpg";
 import logo from "../assets/images/logo.png";
 

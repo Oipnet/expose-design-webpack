@@ -17,7 +17,7 @@ datatable(".is-datatable", {
 
 tippy('#messages', {
   theme: 'light',
-  appendTo: document.getElementById('messages'),
+  appendTo: 'parent',
   content: `
     <p>Aucuns massages<p>
   `,
@@ -29,7 +29,7 @@ tippy('#messages', {
 
 tippy('#notifications', {
   theme: 'light',
-  appendTo: document.getElementById('notifications'),
+  appendTo: 'parent',
   content: `
     <ul class="dropdown-list">
       <li class="unread"><a>Notification 1</a></li>
@@ -45,7 +45,7 @@ tippy('#notifications', {
 
 tippy('#profile', {
   theme: 'light',
-  appendTo: document.getElementById('profile'),
+  appendTo: 'parent',
   content: `
     <ul class="dropdown-list">
      <li><a>Mon compte</a></li>

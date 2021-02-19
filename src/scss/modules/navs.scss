@@ -24,10 +24,13 @@ $navbar-separator-color: $light-gray;
     display: inline-flex;
     height: 100%;
     color: $dark-blue;
+  }
+
+  .dropdown {
+    display: inline-flex;
+    align-items: center;
 
     &#profile {
-      display: inline-flex;
-      align-items: center;
       cursor: pointer;
       font-size: 1.8rem;
 
@@ -67,6 +70,7 @@ $navbar-separator-color: $light-gray;
   .tippy-box[data-theme~='light'] {
     width: 20rem;
     padding: 0.5rem;
+    border-right: 0;
     background-color: $white;
     box-shadow: 0 0 10px #00000029;
     color: $dark-blue;

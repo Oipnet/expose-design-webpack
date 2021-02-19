@@ -37,7 +37,34 @@ $navbar-separator-color: $blue-haze;
     }
   }
 
-  .tippy-box[data-theme~='profile'] {
+  .dropdown-list li {
+    padding-bottom: 0.8rem;
+    border-bottom: 0.2rem solid $athens-gray;
+    margin-bottom: 0.8rem;
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    &.unread ::before {
+      display: inline-block;
+      content: '';
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 50%;
+      background-color: $corn-flower-blue;
+      vertical-align: middle;
+      margin-right: 1rem;
+    }
+
+    &.read {
+      color: #C4CADB;
+    }
+  }
+
+  .tippy-box[data-theme~='light'] {
     background-color: $white;
     color: $chambray;
     padding: 0.5rem;

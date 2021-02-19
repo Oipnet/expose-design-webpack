@@ -15,13 +15,40 @@ datatable(".is-datatable", {
   sortable: true,
 });
 
+tippy('#messages', {
+  theme: 'light',
+  appendTo: document.getElementById('messages'),
+  content: `
+    <p>Aucuns massages<p>
+  `,
+  arrow: roundArrow,
+  interactive: true,
+  allowHTML: true,
+  trigger: 'click',
+});
+
+tippy('#notifications', {
+  theme: 'light',
+  appendTo: document.getElementById('notifications'),
+  content: `
+    <ul class="dropdown-list">
+      <li class="unread"><a>Notification 1</a></li>
+      <li class="unread"><a>Notification 2</a></li>
+      <li class="read"><a>Notification 3</a></li>
+    </ul>
+  `,
+  arrow: roundArrow,
+  interactive: true,
+  allowHTML: true,
+  trigger: 'click'
+});
+
 tippy('#profile', {
-  theme: 'profile',
+  theme: 'light',
   appendTo: document.getElementById('profile'),
   content: `
-    <ul>
+    <ul class="dropdown-list">
      <li><a>Mon compte</a></li>
-     <hr>
      <li>
       <a>Thème light</a>
       <label class="switch">
@@ -29,7 +56,6 @@ tippy('#profile', {
         <span class="slider"></span>
       </label>
      </li>
-     <hr>
      <li><a>Déconnexion</a></li> 
     </ul>
   `,

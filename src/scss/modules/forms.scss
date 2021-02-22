@@ -79,6 +79,15 @@ $input-placeholder-color: $dark-blue;
   color: $dark-blue;
 }
 
+.is-color {
+  padding: 1rem;
+  background-color: $white;
+  color: $dark-blue;
+  cursor: pointer;
+  outline: none;
+  text-align: start;
+}
+
 .switch {
   position: relative;
   display: inline-block;

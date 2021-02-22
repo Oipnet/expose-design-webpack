@@ -135,3 +135,53 @@ input:checked + .slider {
 input:focus + .slider {
   box-shadow: 0 0 0.1rem $green;
 }
+
+.checkbox {
+  position: relative;
+  display: block;
+  padding-left: 3rem;
+  color: $dark-blue;
+  cursor: pointer;
+  user-select: none;
+
+  input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    opacity: 0;
+  }
+  input:checked ~ .checkmark {
+    border: 0;
+    background-color: $blue;
+  }
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  border: 0.2rem solid $dark-blue;
+  background-color: $white;
+  border-radius: 0.15rem;
+
+  &::after {
+    position: absolute;
+    display: none;
+    content: "";
+  }
+}
+.container input:checked ~ .checkmark::after {
+  display: block;
+}
+.container .checkmark::after {
+  top: 0.3rem;
+  left: 0.7rem;
+  width: 0.7rem;
+  height: 1rem;
+  border: 0.1rem solid $white;
+  border-width: 0 0.2rem 0.2rem 0;
+  transform: rotate(45deg);
+}

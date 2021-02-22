@@ -8,10 +8,9 @@
     border: 0.2rem solid $white !important;
     background: transparent !important;
     box-shadow: none !important;
-
-    &.dropdown-active {
-      border: 0.2rem solid $light-gray !important;
-    }
+  }
+  &.ts-input.dropdown-active {
+    border: 0.2rem solid $light-gray !important;
   }
 
   .ts-dropdown {

@@ -14,16 +14,14 @@
   display: inline-flex;
   vertical-align: middle;
 
-  &.is-arrow { 
-    i {
-      margin: 0;
-    }
-    &.rotate-right i {
-      transform: rotate(90deg);
-    }
-    &.rotate-left i {
-      transform: rotate(-90deg);
-    }
+  &.is-arrow i {
+    margin: 0;
+  }
+  &.is-arrow.rotate-right i {
+    transform: rotate(90deg);
+  }
+  &.is-arrow.rotate-left i {
+    transform: rotate(-90deg);
   }
 
   &.is-small {
@@ -60,7 +58,6 @@
   fill: $border-gray;
 }
 
-/* The fill */
 .tippy-box[data-theme~='light-tooltip'] > .tippy-svg-arrow > svg:last-child {
   fill: $white;
 }

@@ -20,22 +20,24 @@
   &.is-primary {
     background-color: $color-primary;
     color: $white;
+  }
+  &.is-primary .icon i {
+    color: $white;
+  }
 
-    .icon i {
-      color: $white;
-    }
+  &.is-primary.is-dashed {
+    border-color: $color-primary;
+    background-color: inherit;
+    color: $color-primary;
+  }
 
-    &.is-dashed {
-      border-color: $color-primary;
-      background-color: inherit;
-      color: $color-primary;
-    }
-
-    &.is-outlined {
-      border-color: $color-primary;
-      background-color: inherit;
-      color: $color-primary;
-    }
+  &.is-primary.is-outlined {
+    border-color: $color-primary;
+    background-color: inherit;
+    color: $color-primary;
+  }
+  &.is-primary.is-outlined .icon i {
+    color: $blue;
   }
 
   &.is-icon {

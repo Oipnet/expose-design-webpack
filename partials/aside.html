@@ -1,14 +1,23 @@
 <aside class="sidebar">
-  <img class="brand" src="images/logo.png" alt="Furniture Logo">
+  <img class="brand" src="images/logo.png" alt="Furniture Logo" />
   <nav class="sidebar-nav">
     <ul class="nav-items">
       <li class="nav-item is-active">
-        <i class="ri-dashboard-line"></i>
-        <a href="" class="nav-link">Dashboard</a>
+        <a href="" class="nav-link">
+          <span class="icon is-large">
+            <i class="ri-dashboard-line"></i>
+          </span>
+          <span> Dashboard </span>
+        </a>
       </li>
 
-      <li class="nav-item is-collapse" data-target=".sub-menu" data-activator="button" data-arrow=".is-arrow">
-        <a class="button is-link">
+      <li
+        class="nav-item is-collapse"
+        data-target=".sub-menu"
+        data-activator="nav-link"
+        data-arrow=".is-arrow"
+      >
+        <a class="nav-link">
           <span>
             <span class="icon is-large">
               <i class="ri-money-euro-circle-line"></i>
@@ -16,19 +25,19 @@
             <span>Gestion des ventes</span>
           </span>
           <span class="icon is-arrow">
-            <i class="ri-arrow-drop-right-line"></i>
+            <i class="ri-arrow-right-s-line"></i>
           </span>
         </a>
-        
+
         <ul class="sub-menu is-hidden">
-          <li>
-            <a href="" class="sub-item">Commandes clients</a>
+          <li class="sub-item">
+            <a href="">Commandes clients</a>
           </li>
-          <li>
-            <a href="" class="sub-item">Devis</a>
+          <li class="sub-item">
+            <a href="">Devis</a>
           </li>
-          <li>
-            <a href="" class="sub-item">Avoirs</a>
+          <li class="sub-item">
+            <a href="">Avoirs</a>
           </li>
         </ul>
       </li>

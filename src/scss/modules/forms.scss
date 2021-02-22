@@ -1,16 +1,13 @@
 $input-background-color: $light-gray;
 $input-placeholder-color: $dark-blue;
 
-.control.has-icon-right {
-  .icon {
+.control {
+  &.has-icon-right .icon {
     position: relative;
     z-index: 100;
     margin-left: -3.5rem;
   }
-}
-
-.control.is-fullwidth {
-  .input {
+  &.is-fullwidth .input {
     width: 100%;
   }
 }
@@ -19,12 +16,8 @@ $input-placeholder-color: $dark-blue;
   margin-bottom: 0.5rem;
   color: $dark-blue;
 
-  &.has-icon-right {
-    i {
-      margin-left: 0.5rem;
-    }
-  }
-  i {
+  &.has-icon-right i {
+    margin-left: 0.5rem;
     font-size: 1.8rem;
     vertical-align: middle;
   }

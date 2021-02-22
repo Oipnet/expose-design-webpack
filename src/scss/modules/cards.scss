@@ -28,7 +28,7 @@
   &.is-grow {
     flex: 0 0 50%;
   }
-  
+
   > * {
     padding: 0 1rem;
   }
@@ -39,10 +39,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.3rem 1.5rem;
-  border-bottom: 0.2rem solid $light-gray;
-  background-color: $white;
   border-radius: 0.5rem 0.5rem 0 0;
   line-height: 3.3rem;
+  @include themed() {
+    border-bottom: 0.2rem solid t($background);
+    background-color: t($card-background);
+  }
 
   &:last-child {
     border-radius: 0.5rem;
@@ -71,10 +73,12 @@
   flex-grow: 1;
   justify-content: center;
   padding: 3rem;
-  background-color: $white;
   border-radius: 0 0 0.5rem 0.5rem;
   transform-origin: top;
   transition: all $transition-time;
+  @include themed() {
+    background-color: t($card-background);
+  }
 
   &:first-child {
     height: 100%;
@@ -89,7 +93,9 @@
 .card-footer {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  background-color: $white;
   border-radius: 0 0 0.5rem 0.5rem;
   text-align: center;
+  @include themed() {
+    background-color: t($card-background);
+  }
 }

@@ -1,5 +1,8 @@
 $white: #fff;
+$black: #212529;
+$light-black: #2D3136;
 $light-gray: #eff0f3;
+$light-gray-2: #d3d4d5;
 $gray: #7f8394;
 $border-gray: #c5cadb;
 $light-blue: #49b8ff;
@@ -12,3 +15,50 @@ $green: #1ee298;
 $color-primary: $blue;
 
 $transition-time: 0.5s;
+
+$background: 'background';
+$navbar-background: 'navbar-background';
+$navbar-separator: 'navbar-separator';
+$card-background: 'card-background';
+$card-header-border: 'card-header-border';
+$input-placeholder: 'input-placeholder';
+$input-background: 'input-background';
+$text: 'text';
+$title: 'title';
+$link-title: 'link-title';
+$text-secondary: 'text-secondary';
+$primary: 'primary';
+$border: 'border';
+
+$themes: (
+    default: (
+        background: $light-gray,
+        navbar-background: $white,
+        navbar-separator: $light-gray,
+        card-background: $white,
+        card-header-border: $light-gray,
+        input-placeholder: $dark-blue,
+        input-background: $white,
+        text: $dark-blue,
+        title: $dark-blue,
+        link-title: $blue,
+        text-secondary: $gray,
+        primary: $blue,
+        border: $border-gray
+    ),
+    dark: (
+        background: $black,
+        navbar-background: $light-black,
+        navbar-separator: $light-gray,
+        card-background: $light-black,
+        card-header-border: $black,
+        input-placeholder: $white,
+        input-background: $light-black,
+        text: $white,
+        title: $white,
+        link-title: $blue,
+        text-secondary: $light-gray-2,
+        primary: $blue,
+        border: $border-gray
+    ),
+);

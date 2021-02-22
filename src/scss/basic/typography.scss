@@ -5,14 +5,18 @@
 }
 
 a.title {
-  color: $blue;
+  @include themed() {
+    color: t($link-title);
+  }
 }
 
 .title {
   margin-bottom: 2rem;
-  color: $dark-blue;
   font-family: 'Raleway' sans-serif;
   font-weight: 700;
+  @include themed() {
+    color: t($title);
+  }
 
   &.is-1 {
     font-size: 2.3rem;

@@ -62,12 +62,12 @@ tippy('#profile', {
      <li><a>Mon compte</a></li>
      <li>
       <a>Thème light</a>
-      <label class="switch">
+      <label id="theme-switch" class="switch">
         <input type="checkbox">
         <span class="slider"></span>
       </label>
      </li>
-     <li><a>Déconnexion</a></li> 
+     <li><a>Déconnexion</a></li>
     </ul>
   `,
   arrow: roundArrow,
@@ -106,4 +106,15 @@ new TomSelect("#language-select", {
       );
     },
   },
+});
+
+const body = [...document.getElementsByTagName('body')][0];
+
+body.classList.add('theme--default');
+
+document.getElementById('theme-switch').addEventListener('click', (e) => {
+  e.preventDefault();
+
+  body.classList.toggle('theme--default');
+  body.classList.toggle('theme--dark');
 });

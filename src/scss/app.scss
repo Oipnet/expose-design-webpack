@@ -1,5 +1,6 @@
 @import './tools/reset';
 @import './helpers/variables';
+@import './helpers/mixins';
 @import './helpers/modifiers';
 @import './basic/typography';
 @import './modules/buttons';
@@ -24,8 +25,13 @@ html {
 }
 
 body {
-  background-color: $light-gray;
   font-size: 1.6rem;
+}
+body.theme--default {
+  background-color: $light-gray;
+}
+body.theme--dark {
+  background-color: $black;
 }
 
 p {

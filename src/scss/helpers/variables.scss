@@ -18,6 +18,7 @@ $transition-time: 0.5s;
 
 $background: 'background';
 $navbar-background: 'navbar-background';
+$navbar-text: 'navbar-text';
 $navbar-separator: 'navbar-separator';
 $card-background: 'card-background';
 $card-header-border: 'card-header-border';
@@ -34,6 +35,7 @@ $themes: (
     default: (
         background: $light-gray,
         navbar-background: $white,
+        navbar-text: $dark-blue,
         navbar-separator: $light-gray,
         card-background: $white,
         card-header-border: $light-gray,
@@ -49,7 +51,8 @@ $themes: (
     dark: (
         background: $black,
         navbar-background: $light-black,
-        navbar-separator: $light-gray,
+        navbar-text: $light-gray-2,
+        navbar-separator: $light-gray-2,
         card-background: $light-black,
         card-header-border: $black,
         input-placeholder: $white,

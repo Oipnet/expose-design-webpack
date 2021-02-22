@@ -23,8 +23,12 @@
     display: inline-flex;
     height: 100%;
     @include themed() {
-      color: t($text);
+      color: t($navbar-text);
     }
+  }
+
+  .navbar-item .icon i {
+    color: inherit;
   }
 
   .dropdown {

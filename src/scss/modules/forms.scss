@@ -28,6 +28,7 @@ $input-placeholder-color: $dark-blue;
   position: relative;
   display: inline-block;
   height: 4rem;
+  padding: 1rem !important;
 
   .input[type='file'] {
     position: absolute;

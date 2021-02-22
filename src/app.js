@@ -5,7 +5,6 @@ import logo from "../assets/images/logo.png";
 import TomSelect from "tom-select";
 import { collapse } from "./components/collapse";
 import { datatable } from "./components/table";
-import { tooltip } from "./components/tooltip";
 import tippy, { roundArrow } from "tippy.js";
 
 collapse();
@@ -13,6 +12,18 @@ collapse();
 datatable(".is-datatable", {
   searchable: true,
   sortable: true,
+});
+
+let tooltips = [...document.getElementsByClassName('tooltip')];
+
+tooltips.forEach(tooltip => {
+  tippy(tooltip, {
+    arrow: roundArrow + roundArrow,
+    theme: 'light-tooltip',
+    content: tooltip.dataset.tooltipContent,
+    placement: tooltip.dataset.tooltipPlacement,
+    maxWidth: 470
+  });
 });
 
 tippy('#messages', {

@@ -68,16 +68,15 @@ $input-placeholder-color: $dark-blue;
   color: $input-placeholder-color;
 }
 
-.select {
-  width: 100%;
-  padding: 0 1rem 0 0;
-  border: 0;
-  margin: 0;
-  background-color: transparent;
-  cursor: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+.select select {
+  position: relative;
+  width: 30rem;
+  padding: 1rem 0.5rem;
+  border: 0.1rem solid $border-gray;
+  appearance: none;
+  background-color: $white;
+  border-radius: 0.5rem;
+  color: $dark-blue;
 }
 
 .switch {

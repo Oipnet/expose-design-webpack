@@ -9,6 +9,12 @@ $input-placeholder-color: $dark-blue;
   }
 }
 
+.control.is-fullwidth {
+  .input {
+    width: 100%;
+  }
+}
+
 .label {
   margin-bottom: 0.5rem;
   color: $dark-blue;

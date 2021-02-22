@@ -1,5 +1,6 @@
 @import './tools/reset';
 @import './helpers/variables';
+@import './helpers/modifiers';
 @import './basic/typography';
 @import './modules/buttons';
 @import './modules/cards';
@@ -10,7 +11,6 @@
 @import './modules/table';
 @import './modules/tags';
 @import './tools/tstheme';
-@import './modifiers';
 
 @import 'remixicon/fonts/remixicon.css';
 @import 'flag-icon-css/css/flag-icon.min.css';

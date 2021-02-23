@@ -74,19 +74,21 @@
   }
 }
 
-.tippy-box[data-theme~='light'] {
+.tippy-box[data-theme~='default'] {
   width: 20rem;
   padding: 0.5rem;
   border-right: 0;
   box-shadow: 0 0 10px #00000029;
-  color: $dark-blue;
   font-size: 1.6rem;
   @include themed() {
     background-color: t($forward-background);
+    color: t($navbar-text);
   }
 
   .tippy-svg-arrow {
-    fill: $white;
+    @include themed() {
+      fill: t($forward-background);
+    }
   }
 
   a {

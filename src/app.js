@@ -27,7 +27,7 @@ tooltips.forEach(tooltip => {
 });
 
 tippy('#messages', {
-  theme: 'light',
+  theme: 'default',
   appendTo: 'parent',
   content: `
     <p>Aucuns massages<p>
@@ -39,7 +39,7 @@ tippy('#messages', {
 });
 
 tippy('#notifications', {
-  theme: 'light',
+  theme: 'default',
   appendTo: 'parent',
   content: `
     <ul class="dropdown-list">
@@ -55,7 +55,7 @@ tippy('#notifications', {
 });
 
 tippy('#profile', {
-  theme: 'light',
+  theme: 'default',
   appendTo: 'parent',
   content: `
     <ul class="dropdown-list">

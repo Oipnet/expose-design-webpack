@@ -1,6 +1,7 @@
 .stepper {
   display: flex;
   width: 100%;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -17,9 +18,11 @@
     top: 25%;
     width: 50%; // make it 100% width so that it won't let any gap to be rendered in the ui
     height: 3px;
-    border-top: 1px dotted $color-primary;
     content: '';
     transform: translateX(100%);
+    @include themed() {
+      border-top: 1.5px dashed t($text);
+    }
   }
 
   &.is-active,
@@ -27,21 +30,32 @@
     cursor: default;
     font-weight: bold;
   }
+  &.is-active .stepper-item-badge,
+  &.is-checked .stepper-item-badge {
+    background-color: $color-primary !important;
+  }
 
   &.is-active .stepper-item-badge {
-      border: 4px solid $white;
       background-color: $color-primary;
       box-shadow: 0 0 0 2px $color-primary;
-      color: $white;
+      color: $white !important;
+      @include themed() {
+        border: 4px solid t($forward-background);
+      }
   }
 
   &.is-checked .stepper-item-badge {
-    border: 8px solid lighten($color-primary, 26%);
-    background-color: $color-primary;
+    width: 2.4rem;
+    height: 2.4rem;
+    box-shadow: 0 0 0 8px rgba($color-primary, 0.2);
     color: $white;
   }
   &.is-checked .stepper-item-badge i {
     color: $white;
+  }
+  &.is-checked .stepper-item-label {
+    margin-top: 1.7rem;
+    color: $color-primary !important;
   }
 
   .stepper-item-badge {
@@ -50,13 +64,19 @@
     height: 4.4rem;
     align-items: center;
     justify-content: center;
-    background-color: $white;
     border-radius: 50%;
     line-height: 4.4rem;
     text-align: center;
+    @include themed() {
+      background-color: t($forward-background);
+      color: t($text);
+    }
   }
 
   .stepper-item-label {
     margin-top: 0.9rem;
+    @include themed() {
+      color: t($text);
+    }
   }
 }

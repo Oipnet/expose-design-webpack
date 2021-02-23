@@ -43,7 +43,7 @@
   line-height: 3.3rem;
   @include themed() {
     border-bottom: 0.2rem solid t($background);
-    background-color: t($card-background);
+    background-color: t($forward-background);
   }
 
   &:last-child {
@@ -77,7 +77,7 @@
   transform-origin: top;
   transition: all $transition-time;
   @include themed() {
-    background-color: t($card-background);
+    background-color: t($forward-background);
   }
 
   &:first-child {
@@ -96,6 +96,6 @@
   border-radius: 0 0 0.5rem 0.5rem;
   text-align: center;
   @include themed() {
-    background-color: t($card-background);
+    background-color: t($forward-background);
   }
 }

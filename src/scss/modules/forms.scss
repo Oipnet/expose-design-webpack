@@ -49,14 +49,14 @@
   outline: 0;
   @include themed() {
     border: 0.1rem solid t($border);
-    background-color: t($input-background);
+    background-color: t($forward-background);
   }
 
   &::placeholder {
     font-weight: 400;
     opacity: 1;
     @include themed() {
-      color: t($input-placeholder);
+      color: t($text);
     }
   }
 }
@@ -71,7 +71,7 @@
 
 .icon i {
   @include themed() {
-    color: t($input-placeholder);
+    color: t($text);
   }
 }
 
@@ -83,7 +83,7 @@
   border-radius: 0.5rem;
   @include themed() {
     border: 0.1rem solid t($border);
-    background-color: t($input-background);
+    background-color: t($forward-background);
     color: t($text);
   }
 }
@@ -94,8 +94,8 @@
   outline: none;
   text-align: start;
   @include themed() {
-    background-color: t($input-background);
-    color: t($input-placeholder);
+    background-color: t($forward-background);
+    color: t($text);
   }
 }
 
@@ -180,7 +180,7 @@ input:focus + .slider {
   border-radius: 0.15rem;
   @include themed() {
     border: 0.2rem solid t($text);
-    background-color: t($navbar-background);
+    background-color: t($forward-background);
   }
 
   &::after {
@@ -199,7 +199,7 @@ input:focus + .slider {
   height: 1rem;
   transform: rotate(45deg);
   @include themed() {
-    border: 0.1rem solid t($navbar-background);
+    border: 0.1rem solid t($forward-background);
     border-width: 0 0.2rem 0.2rem 0;
   }
 }

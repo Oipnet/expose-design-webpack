@@ -74,6 +74,14 @@ tippy('#profile', {
   interactive: true,
   allowHTML: true,
   trigger: 'click',
+  onShown() {
+    document.getElementById('theme-switch').addEventListener('click', (e) => {
+      e.preventDefault();
+
+      body.classList.toggle('theme--default');
+      body.classList.toggle('theme--dark');
+    })
+  }
 });
 
 new TomSelect("#language-select", {
@@ -110,11 +118,4 @@ new TomSelect("#language-select", {
 
 const body = [...document.getElementsByTagName('body')][0];
 
-body.classList.add('theme--default');
-
-document.getElementById('theme-switch').addEventListener('click', (e) => {
-  e.preventDefault();
-
-  body.classList.toggle('theme--default');
-  body.classList.toggle('theme--dark');
-});
+body.classList.add('theme--dark');

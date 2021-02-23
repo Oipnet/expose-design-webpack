@@ -34,6 +34,9 @@ body.theme--dark {
   background-color: $black;
 }
 
-p {
+.theme--default p {
   color: $gray;
+}
+.theme--dark p{
+  color: $light-gray-2;
 }

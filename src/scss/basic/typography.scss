@@ -5,9 +5,7 @@
 }
 
 a.title {
-  @include themed() {
-    color: t($link-title);
-  }
+  color: $color-primary;
 }
 
 .title {

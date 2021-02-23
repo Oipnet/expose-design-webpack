@@ -7,6 +7,17 @@ import { collapse } from "./components/collapse";
 import { datatable } from "./components/table";
 import tippy, { roundArrow } from "tippy.js";
 
+const body = [...document.getElementsByTagName('body')][0];
+
+body.classList.add('theme--dark');
+
+let themeSwith = document.getElementById('theme-switch', toggleTheme);
+
+function toggleTheme(checkbox) {
+  body.classList.toggle('theme--default');
+  body.classList.toggle('theme--dark');
+}
+
 collapse();
 
 datatable(".is-datatable", {
@@ -57,13 +68,16 @@ tippy('#notifications', {
 tippy('#profile', {
   theme: 'default',
   appendTo: 'parent',
+  onMount(instance) {
+    document.getElementById('theme-switch').addEventListener('click', toggleTheme);
+  },
   content: `
     <ul class="dropdown-list">
      <li><a>Mon compte</a></li>
      <li>
       <a>Thème light</a>
-      <label id="theme-switch" class="switch">
-        <input type="checkbox">
+      <label class="switch">
+        <input type="checkbox" id="theme-switch">
         <span class="slider"></span>
       </label>
      </li>
@@ -74,14 +88,6 @@ tippy('#profile', {
   interactive: true,
   allowHTML: true,
   trigger: 'click',
-  onShown() {
-    document.getElementById('theme-switch').addEventListener('click', (e) => {
-      e.preventDefault();
-
-      body.classList.toggle('theme--default');
-      body.classList.toggle('theme--dark');
-    })
-  }
 });
 
 new TomSelect("#language-select", {
@@ -115,7 +121,3 @@ new TomSelect("#language-select", {
     },
   },
 });
-
-const body = [...document.getElementsByTagName('body')][0];
-
-body.classList.add('theme--dark');

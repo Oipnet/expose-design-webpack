@@ -23,6 +23,7 @@ $navbar-icons: 'navbar-icons';
 $navbar-separators: 'navbar-separators';
 $navbar-dropdown-separators: 'navbar-dropdown-separators';
 $input-background: 'input-background';
+$table-nth-row: 'table-nth-row';
 $text: 'text';
 $title: 'title';
 $text-secondary: 'text-secondary';
@@ -37,6 +38,7 @@ $themes: (
         navbar-separators: $light-gray,
         navbar-dropdown-separators: $light-gray,
         input-background: $white,
+        table-nth-row: $light-gray,
         text: $dark-blue,
         title: $dark-blue,
         text-secondary: $gray,
@@ -50,6 +52,7 @@ $themes: (
         navbar-separators: $light-gray-2,
         navbar-dropdown-separators: rgba($light-gray-2, 0.1),
         input-background: $light-black,
+        table-nth-row: #B1BCC11A,
         text: $white,
         title: $white,
         text-secondary: $white,

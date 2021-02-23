@@ -5,23 +5,39 @@
   background: transparent;
 
   .ts-input {
-    border: 0.2rem solid $white !important;
     background: transparent !important;
     box-shadow: none !important;
+    @include themed() {
+      border: 0.2rem solid t($forward-background) !important;
+    }
   }
   .ts-input.dropdown-active {
-    border: 0.2rem solid $light-gray !important;
+    @include themed() {
+      border: 0.2rem solid t($background) !important;
+    }
+  }
+  .ts-input.dropdown-active::before {
+    background: none;
   }
 
   .ts-dropdown {
-    border: 0.2rem solid $light-gray;
     border-top: 0;
+    @include themed() {
+      border: 0.2rem solid t($background);
+    }
+  }
+  .language-option {
+    @include themed() {
+      background-color: t($forward-background);
+    }
   }
 }
 
 .language-option {
-  color: $dark-blue;
   font-size: 1.6rem;
+  @include themed() {
+    color: t($navbar-text);
+  }
 
   span:first-child {
     margin-right: 1rem;

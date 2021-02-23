@@ -75,7 +75,7 @@
   padding: 3rem;
   border-radius: 0 0 0.5rem 0.5rem;
   transform-origin: top;
-  transition: all $transition-time;
+  transition: transform $transition-time;
   @include themed() {
     background-color: t($forward-background);
   }

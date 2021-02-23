@@ -26,13 +26,13 @@
   }
 
   &.is-primary.is-dashed {
-    border-color: $color-primary;
+    border: 0.1rem dashed $color-primary;
     background-color: inherit;
     color: $color-primary;
   }
 
   &.is-primary.is-outlined {
-    border-color: $color-primary;
+    border: 0.1rem solid $color-primary;
     background-color: inherit;
     color: $color-primary;
   }

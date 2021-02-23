@@ -46,6 +46,7 @@
   border-radius: 5px;
   font-size: 1.6rem;
   font-weight: 300;
+  outline: 0;
   @include themed() {
     border: 0.1rem solid t($border);
     background-color: t($input-background);

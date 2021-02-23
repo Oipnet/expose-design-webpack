@@ -21,6 +21,7 @@ $forward-background: 'forward-background';
 $navbar-text: 'navbar-text';
 $navbar-icons: 'navbar-icons';
 $navbar-separators: 'navbar-separators';
+$navbar-dropdown-separators: 'navbar-dropdown-separators';
 $input-background: 'input-background';
 $text: 'text';
 $title: 'title';
@@ -34,6 +35,7 @@ $themes: (
         navbar-text: $dark-blue,
         navbar-icons: $dark-blue,
         navbar-separators: $light-gray,
+        navbar-dropdown-separators: $light-gray,
         input-background: $white,
         text: $dark-blue,
         title: $dark-blue,
@@ -45,7 +47,8 @@ $themes: (
         forward-background: $light-black,
         navbar-text: $light-gray-2,
         navbar-icons: $light-gray-2,
-        navbar-separators: rgba($light-gray-2, 0.3),
+        navbar-separators: $light-gray-2,
+        navbar-dropdown-separators: rgba($light-gray-2, 0.1),
         input-background: $light-black,
         text: $white,
         title: $white,

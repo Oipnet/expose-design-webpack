@@ -154,9 +154,11 @@ input:focus + .slider {
   position: relative;
   display: block;
   padding-left: 3rem;
-  color: $dark-blue;
   cursor: pointer;
   user-select: none;
+  @include themed() {
+    color: t($text);
+  }
 
   input {
     position: absolute;

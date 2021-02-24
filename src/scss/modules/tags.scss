@@ -1,4 +1,5 @@
 .tag {
+  display: inline-flex;
   padding: 0.4rem 0.8rem;
   border-radius: 0.5rem;
 
@@ -20,7 +21,6 @@
   }
 
   &.is-rounded {
-    display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -38,6 +38,7 @@
     width: 5rem;
     height: 5rem;
   }
+
   .icon {
     color: inherit;
   }
@@ -60,6 +61,26 @@
   &.is-dark-blue {
     background-color: rgba($blue, 0.2);
     color: $blue;
+  }
+}
+
+.tag.is-solid {
+  color: $white;
+
+  &.is-red {
+    background-color: $red;
+  }
+
+  &.is-orange {
+    background-color: $orange;
+  }
+
+  &.is-blue {
+    background-color: $light-blue;
+  }
+
+  &.is-dark-blue {
+    background-color: $blue;
   }
 }
 

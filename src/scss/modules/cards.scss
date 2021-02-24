@@ -49,6 +49,15 @@
     background-color: t($forward-background);
   }
 
+  .icon {
+    @include themed() {
+      color: t($text);
+    }
+  }
+  .button .icon {
+    color: inherit;
+  }
+
   &:last-child {
     border-radius: 0.5rem;
   }

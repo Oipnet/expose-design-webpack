@@ -7,6 +7,12 @@
   &.is-fullwidth .input {
     width: 100%;
   }
+
+  .icon {
+    @include themed() {
+      color: t($text);
+    }
+  }
 }
 
 .label {

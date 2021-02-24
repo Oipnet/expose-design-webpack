@@ -15,7 +15,7 @@
     background-color: $color-primary;
     color: $white;
   }
-  &.is-primary .icon i {
+  &.is-primary .icon {
     color: $white;
   }
 
@@ -26,7 +26,7 @@
       color: t($button-dashed);
     }
   }
-  &.is-dashed .icon i {
+  &.is-dashed .icon {
     @include themed() {
       color: t($button-dashed);
     }
@@ -42,20 +42,13 @@
   &.is-outlined {
     background-color: transparent;
   }
-  &.is-dashed .icon i,
-  &.is-outlined .icon i {
-    color: inherit;
-  }
 
   &.is-light.is-primary {
     background-color: rgba($color-primary, 0.3);
     color: $color-primary;
     font-weight: 600;
   }
-  &.is-light.is-primary i {
-    color: inherit;
-  }
-  &.is-primary.is-translucent .icon i {
+  &.is-light.is-primary .icon {
     color: $color-primary;
   }
 

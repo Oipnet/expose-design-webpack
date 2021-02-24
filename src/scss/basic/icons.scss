@@ -1,0 +1,27 @@
+.icon {
+  display: inline-flex;
+  color: inherit;
+  vertical-align: middle;
+
+  i {
+    color: inherit !important;
+  }
+
+  &.is-arrow i {
+    margin: 0;
+  }
+  &.is-arrow.rotate-right i {
+    transform: rotate(90deg);
+  }
+  &.is-arrow.rotate-left i {
+    transform: rotate(-90deg);
+  }
+
+  &.is-small {
+    font-size: 2rem;
+  }
+
+  &.is-large {
+    font-size: 3rem;
+  }
+}

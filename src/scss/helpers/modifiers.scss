@@ -1,39 +1,3 @@
-.has-icon-left {
-  .input,
-  .button {
-    padding-left: 4rem !important;
-  }
-
-  .icon.is-small {
-    margin-bottom: 4px;
-    margin-left: -29.4rem;
-  }
-}
-
-.icon {
-  display: inline-flex;
-  vertical-align: middle;
-
-  &.is-arrow i {
-    margin: 0;
-  }
-  &.is-arrow.rotate-right i {
-    transform: rotate(90deg);
-  }
-  &.is-arrow.rotate-left i {
-    transform: rotate(-90deg);
-  }
-
-  &.is-small {
-    padding: 0.5rem 0.2rem;
-    font-size: 2rem;
-  }
-
-  &.is-large {
-    font-size: 3rem;
-  }
-}
-
 .card-content.is-hidden {
   overflow: hidden;
   height: 0;
@@ -48,16 +12,16 @@
   margin-bottom: 0 !important;
 }
 
-.tippy-box[data-theme~='light-tooltip'] {
+.tippy-box[data-theme~="light-tooltip"] {
   border: 0.1rem solid $border-gray;
   background: $white;
   color: $dark-blue;
 }
 
-.tippy-box[data-theme~='light-tooltip'] > .tippy-svg-arrow > svg:first-child {
+.tippy-box[data-theme~="light-tooltip"] > .tippy-svg-arrow > svg:first-child {
   fill: $border-gray;
 }
 
-.tippy-box[data-theme~='light-tooltip'] > .tippy-svg-arrow > svg:last-child {
+.tippy-box[data-theme~="light-tooltip"] > .tippy-svg-arrow > svg:last-child {
   fill: $white;
 }

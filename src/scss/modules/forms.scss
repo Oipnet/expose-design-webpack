@@ -206,3 +206,14 @@ input:focus + .slider {
     border-width: 0 0.2rem 0.2rem 0;
   }
 }
+
+.has-icon-left {
+  .input {
+    padding-left: 4rem !important;
+  }
+
+  .icon.is-small {
+    margin-bottom: 4px;
+    margin-left: -29.4rem;
+  }
+}

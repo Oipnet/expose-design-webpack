@@ -1,24 +1,25 @@
-@import './tools/reset';
-@import './helpers/variables';
-@import './helpers/mixins';
-@import './helpers/modifiers';
-@import './basic/typography';
-@import './modules/buttons';
-@import './modules/cards';
-@import './modules/forms';
-@import './modules/layouts';
-@import './modules/navs';
-@import './modules/stepper';
-@import './modules/table';
-@import './modules/tags';
-@import './tools/tstheme';
+@import "./tools/reset";
+@import "./helpers/variables";
+@import "./helpers/mixins";
+@import "./helpers/modifiers";
+@import "./basic/typography";
+@import "./basic/icons";
+@import "./modules/buttons";
+@import "./modules/cards";
+@import "./modules/forms";
+@import "./modules/layouts";
+@import "./modules/navs";
+@import "./modules/stepper";
+@import "./modules/table";
+@import "./modules/tags";
+@import "./tools/tstheme";
 
-@import 'remixicon/fonts/remixicon.css';
-@import 'flag-icon-css/css/flag-icon.min.css';
-@import 'tom-select/dist/css/tom-select.default.css';
-@import 'tippy.js/dist/tippy.css';
-@import 'tippy.js/dist/svg-arrow.css';
-@import 'tippy.js/dist/border.css';
+@import "remixicon/fonts/remixicon.css";
+@import "flag-icon-css/css/flag-icon.min.css";
+@import "tom-select/dist/css/tom-select.default.css";
+@import "tippy.js/dist/tippy.css";
+@import "tippy.js/dist/svg-arrow.css";
+@import "tippy.js/dist/border.css";
 
 html {
   font-size: 62.5%;
@@ -37,6 +38,6 @@ body.theme--dark {
 .theme--default p {
   color: $gray;
 }
-.theme--dark p{
+.theme--dark p {
   color: $light-gray-2;
 }

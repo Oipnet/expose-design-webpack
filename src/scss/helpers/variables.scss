@@ -24,6 +24,7 @@ $navbar-separators: "navbar-separators";
 $navbar-dropdown-separators: "navbar-dropdown-separators";
 $input-background: "input-background";
 $input-color: "input-color";
+$button-dashed: "button-dashed";
 $table-nth-row: "table-nth-row";
 $text: "text";
 $title: "title";
@@ -40,6 +41,7 @@ $themes: (
     navbar-dropdown-separators: $light-gray,
     input-background: $white,
     input-color: $border-gray,
+    button-dashed: $blue,
     table-nth-row: $light-gray,
     text: $dark-blue,
     title: $dark-blue,
@@ -55,6 +57,7 @@ $themes: (
     navbar-dropdown-separators: rgba($light-gray-2, 0.1),
     input-background: $light-black,
     input-color: rgba($light-gray-2, 0.4),
+    button-dashed: $light-gray-2,
     table-nth-row: #b1bcc11a,
     text: $white,
     title: $white,

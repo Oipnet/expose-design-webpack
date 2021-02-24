@@ -3,18 +3,12 @@
   align-items: center;
   padding: 1rem;
   border: 0;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   cursor: pointer;
-
   font-size: 1.6rem;
 
   &.is-small {
     padding: 0 0.4rem;
-  }
-
-  &.is-dashed {
-    border: 1px dashed $dark-blue;
-    color: $dark-blue;
   }
 
   &.is-primary {
@@ -25,28 +19,48 @@
     color: $white;
   }
 
-  &.is-primary.is-dashed {
-    border: 0.1rem dashed $color-primary;
-    background-color: inherit;
-    color: $color-primary;
+  &.is-dashed {
+    border: 1px dashed;
+    @include themed() {
+      border-color: t($button-dashed);
+      color: t($button-dashed);
+    }
+  }
+  &.is-dashed .icon i {
+    @include themed() {
+      color: t($button-dashed);
+    }
+  }
+  &.is-outlined {
+    border: 1px solid;
+    @include themed() {
+      border-color: t($input-color);
+      color: t($text);
+    }
+  }
+  &.is-dashed,
+  &.is-outlined {
+    background-color: transparent;
+  }
+  &.is-dashed .icon i,
+  &.is-outlined .icon i {
+    color: inherit;
   }
 
-  &.is-primary.is-outlined {
-    border: 0.1rem solid $color-primary;
-    background-color: inherit;
-    color: $color-primary;
-  }
-  &.is-primary.is-outlined .icon i {
-    color: $blue;
-  }
-
-  &.is-primary.is-translucent {
+  &.is-light.is-primary {
     background-color: rgba($color-primary, 0.3);
     color: $color-primary;
     font-weight: 600;
   }
+  &.is-light.is-primary i {
+    color: inherit;
+  }
   &.is-primary.is-translucent .icon i {
     color: $color-primary;
+  }
+
+  .icon {
+    padding: 0;
   }
 
   &.is-icon {
@@ -60,7 +74,7 @@
     background: none;
   }
 
-  span {
-    color: inherit;
+  span:last-child {
+    margin-left: 0.5rem;
   }
 }

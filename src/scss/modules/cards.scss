@@ -13,6 +13,9 @@
     align-items: center;
     justify-content: center;
   }
+  &.is-jumbo .title {
+    color: $white;
+  }
   &.is-collapse {
     height: fit-content;
     min-height: 6rem !important;

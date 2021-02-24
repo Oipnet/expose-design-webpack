@@ -65,3 +65,13 @@ $themes: (
     border: $border-gray,
   ),
 );
+
+$breakpoints: (
+  ("xs", 480px),
+  ("s", 624px),
+  ("sm", 768px),
+  ("m", 896px),
+  ("md", 1024px),
+  ("l", 1195px),
+  ("lg", 1366px)
+);

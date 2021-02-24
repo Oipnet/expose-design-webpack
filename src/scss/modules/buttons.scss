@@ -43,6 +43,7 @@
   &.is-primary.is-translucent {
     background-color: rgba($color-primary, 0.3);
     color: $color-primary;
+    font-weight: 600;
   }
   &.is-primary.is-translucent .icon i {
     color: $color-primary;

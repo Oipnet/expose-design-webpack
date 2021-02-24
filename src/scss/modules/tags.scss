@@ -62,3 +62,28 @@
     color: $blue;
   }
 }
+
+.message.has-tag {
+  display: inline-flex;
+  align-items: center;
+  border: 0.1rem solid;
+  border-radius: 5px;
+
+  .icon:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  span {
+    padding: 1rem;
+    @include themed() {
+      color: t($text);
+    }
+  }
+}
+
+.message.has-tag.is-blue {
+  border-color: $blue;
+
+  .icon:first-child {
+    background-color: $blue;
+  }
+}

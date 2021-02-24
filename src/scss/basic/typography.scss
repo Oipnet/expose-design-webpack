@@ -54,3 +54,19 @@ a.title {
     color: t($text-secondary);
   }
 }
+
+.inline-text {
+  @include themed() {
+    color: t($text);
+  }
+
+  .title,
+  .icon {
+    display: inline;
+    margin: 0;
+  }
+
+  :last-child {
+    margin-left: 0.3rem;
+  }
+}

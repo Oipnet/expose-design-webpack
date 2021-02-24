@@ -12,16 +12,23 @@
   margin-bottom: 0 !important;
 }
 
-.tippy-box[data-theme~="light-tooltip"] {
-  border: 0.1rem solid $border-gray;
-  background: $white;
-  color: $dark-blue;
+.tippy-box[data-theme~="tooltip"] {
+  border: 0.1rem solid;
+  @include themed() {
+    border-color: t($input-color);
+    background: t($forward-background);
+    color: t($text);
+  }
 }
 
-.tippy-box[data-theme~="light-tooltip"] > .tippy-svg-arrow > svg:first-child {
-  fill: $border-gray;
+.tippy-box[data-theme~="tooltip"] > .tippy-svg-arrow > svg:first-child {
+  @include themed() {
+    fill: t($input-color);
+  }
 }
 
-.tippy-box[data-theme~="light-tooltip"] > .tippy-svg-arrow > svg:last-child {
-  fill: $white;
+.tippy-box[data-theme~="tooltip"] > .tippy-svg-arrow > svg:last-child {
+  @include themed() {
+    fill: t($forward-background);
+  }
 }

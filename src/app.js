@@ -1,4 +1,4 @@
-import './scss/app.scss';
+import "./scss/app.scss";
 import profile from "../assets/images/profile-placeholder.jpg";
 import logo from "../assets/images/logo.png";
 
@@ -7,15 +7,15 @@ import { collapse } from "./components/collapse";
 import { datatable } from "./components/table";
 import tippy, { roundArrow } from "tippy.js";
 
-const body = [...document.getElementsByTagName('body')][0];
+const body = [...document.getElementsByTagName("body")][0];
 
-body.classList.add('theme--dark');
+body.classList.add("theme--dark");
 
-let themeSwith = document.getElementById('theme-switch', toggleTheme);
+let themeSwith = document.getElementById("theme-switch", toggleTheme);
 
 function toggleTheme(checkbox) {
-  body.classList.toggle('theme--default');
-  body.classList.toggle('theme--dark');
+  body.classList.toggle("theme--default");
+  body.classList.toggle("theme--dark");
 }
 
 collapse();
@@ -25,33 +25,33 @@ datatable(".is-datatable", {
   sortable: true,
 });
 
-let tooltips = [...document.getElementsByClassName('tooltip')];
+let tooltips = [...document.getElementsByClassName("tooltip")];
 
-tooltips.forEach(tooltip => {
+tooltips.forEach((tooltip) => {
   tippy(tooltip, {
     arrow: roundArrow + roundArrow,
-    theme: 'light-tooltip',
+    theme: "tooltip",
     content: tooltip.dataset.tooltipContent,
     placement: tooltip.dataset.tooltipPlacement,
-    maxWidth: 470
+    maxWidth: 470,
   });
 });
 
-tippy('#messages', {
-  theme: 'default',
-  appendTo: 'parent',
+tippy("#messages", {
+  theme: "default",
+  appendTo: "parent",
   content: `
     <p>Aucuns massages<p>
   `,
   arrow: roundArrow,
   interactive: true,
   allowHTML: true,
-  trigger: 'click',
+  trigger: "click",
 });
 
-tippy('#notifications', {
-  theme: 'default',
-  appendTo: 'parent',
+tippy("#notifications", {
+  theme: "default",
+  appendTo: "parent",
   content: `
     <ul class="dropdown-list">
       <li class="unread"><a>Notification 1</a></li>
@@ -62,14 +62,16 @@ tippy('#notifications', {
   arrow: roundArrow,
   interactive: true,
   allowHTML: true,
-  trigger: 'click'
+  trigger: "click",
 });
 
-tippy('#profile', {
-  theme: 'default',
-  appendTo: 'parent',
+tippy("#profile", {
+  theme: "default",
+  appendTo: "parent",
   onMount(instance) {
-    document.getElementById('theme-switch').addEventListener('click', toggleTheme);
+    document
+      .getElementById("theme-switch")
+      .addEventListener("click", toggleTheme);
   },
   content: `
     <ul class="dropdown-list">
@@ -87,7 +89,7 @@ tippy('#profile', {
   arrow: roundArrow,
   interactive: true,
   allowHTML: true,
-  trigger: 'click',
+  trigger: "click",
 });
 
 new TomSelect("#language-select", {

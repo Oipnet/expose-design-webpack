@@ -12,6 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url("/assets/images/wave-background.svg?encoding=base64");
   }
   &.is-jumbo .title {
     color: $white;

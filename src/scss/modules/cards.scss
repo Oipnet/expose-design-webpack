@@ -13,7 +13,6 @@
     align-items: center;
     justify-content: center;
   }
-
   &.is-collapsable {
     height: fit-content;
   }
@@ -63,6 +62,14 @@
     height: 2rem;
     align-items: center;
     padding: 0.2rem 0.7rem;
+  }
+}
+
+.card.is-blue {
+  .card-header,
+  .card-content,
+  .card-footer {
+    background-color: $color-primary;
   }
 }
 

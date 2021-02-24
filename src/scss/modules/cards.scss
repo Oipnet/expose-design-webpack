@@ -13,8 +13,9 @@
     align-items: center;
     justify-content: center;
   }
-  &.is-collapsable {
+  &.is-collapse {
     height: fit-content;
+    min-height: 6rem !important;
   }
   &.is-collapsable i {
     display: inline-block;

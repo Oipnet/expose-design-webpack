@@ -3,10 +3,23 @@
   <head> </head>
   <body>
     <main class="container">
-      <div class="card-container row">
-        <div class="card">
+      <div class="row">
+        <div
+          class="card is-collapse"
+          data-target=".card-content"
+          data-arrow=".is-arrow"
+          data-activator="title,button"
+          data-arrow-rotation="left"
+        >
           <div class="card-header">
-            <h2 class="title is-2">Tableau simple</h2>
+            <span>
+              <a class="title is-2">Tableau simple</a>
+            </span>
+            <a class="button is-icon">
+              <span class="icon is-arrow is-large">
+                <i class="ri-arrow-down-s-line"></i>
+              </span>
+            </a>
           </div>
           <div class="card-content">
             <table class="table">
@@ -62,9 +75,22 @@
       </div>
 
       <div class="row">
-        <div class="card">
+        <div
+          class="card is-collapse"
+          data-target=".card-content"
+          data-arrow=".is-arrow"
+          data-activator="title,button"
+          data-arrow-rotation="left"
+        >
           <div class="card-header">
-            <h2 class="title is-2">DataTables simple</h2>
+            <span>
+              <a class="title is-2">DataTables simple</a>
+            </span>
+            <a class="button is-icon">
+              <span class="icon is-arrow is-large">
+                <i class="ri-arrow-down-s-line"></i>
+              </span>
+            </a>
           </div>
           <div class="card-content">
             <table class="table is-datatable">

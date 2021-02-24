@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a.title {
@@ -10,7 +10,7 @@ a.title {
 
 .title {
   margin-bottom: 2rem;
-  font-family: 'Raleway' sans-serif;
+  font-family: "Raleway" sans-serif;
   font-weight: 700;
   @include themed() {
     color: t($title);
@@ -43,5 +43,14 @@ a.title {
 
   &.has-no-margin {
     margin: 0;
+  }
+}
+
+.is-secondary {
+  font-size: 1rem;
+  vertical-align: middle;
+
+  @include themed() {
+    color: t($text-secondary);
   }
 }

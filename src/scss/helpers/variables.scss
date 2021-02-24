@@ -45,7 +45,7 @@ $themes: (
     table-nth-row: $light-gray,
     text: $dark-blue,
     title: $dark-blue,
-    text-secondary: $gray,
+    text-secondary: $border-gray,
     border: $border-gray,
   ),
   dark: (
@@ -61,7 +61,7 @@ $themes: (
     table-nth-row: #b1bcc11a,
     text: $white,
     title: $white,
-    text-secondary: $white,
+    text-secondary: rgba($light-gray-2, 0.4),
     border: $border-gray,
   ),
 );

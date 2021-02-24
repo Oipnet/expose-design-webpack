@@ -1,10 +1,10 @@
 $white: #fff;
 $black: #212529;
-$light-black: #2D3136;
+$light-black: #2d3136;
 $light-gray: #eff0f3;
 $light-gray-2: #d3d4d5;
 $gray: #7f8394;
-$border-gray: #c5cadb;
+$border-gray: #c4cadb;
 $light-blue: #49b8ff;
 $blue: #506ef0;
 $dark-blue: #364481;
@@ -16,46 +16,49 @@ $color-primary: $blue;
 
 $transition-time: 0.5s;
 
-$background: 'background';
-$forward-background: 'forward-background';
-$navbar-text: 'navbar-text';
-$navbar-icons: 'navbar-icons';
-$navbar-separators: 'navbar-separators';
-$navbar-dropdown-separators: 'navbar-dropdown-separators';
-$input-background: 'input-background';
-$table-nth-row: 'table-nth-row';
-$text: 'text';
-$title: 'title';
-$text-secondary: 'text-secondary';
-$border: 'border';
+$background: "background";
+$forward-background: "forward-background";
+$navbar-text: "navbar-text";
+$navbar-icons: "navbar-icons";
+$navbar-separators: "navbar-separators";
+$navbar-dropdown-separators: "navbar-dropdown-separators";
+$input-background: "input-background";
+$input-color: "input-color";
+$table-nth-row: "table-nth-row";
+$text: "text";
+$title: "title";
+$text-secondary: "text-secondary";
+$border: "border";
 
 $themes: (
-    default: (
-        background: $light-gray,
-        forward-background: $white,
-        navbar-text: $dark-blue,
-        navbar-icons: $dark-blue,
-        navbar-separators: $light-gray,
-        navbar-dropdown-separators: $light-gray,
-        input-background: $white,
-        table-nth-row: $light-gray,
-        text: $dark-blue,
-        title: $dark-blue,
-        text-secondary: $gray,
-        border: $border-gray
-    ),
-    dark: (
-        background: $black,
-        forward-background: $light-black,
-        navbar-text: $light-gray-2,
-        navbar-icons: $light-gray-2,
-        navbar-separators: $light-gray-2,
-        navbar-dropdown-separators: rgba($light-gray-2, 0.1),
-        input-background: $light-black,
-        table-nth-row: #B1BCC11A,
-        text: $white,
-        title: $white,
-        text-secondary: $white,
-        border: $border-gray
-    ),
+  default: (
+    background: $light-gray,
+    forward-background: $white,
+    navbar-text: $dark-blue,
+    navbar-icons: $dark-blue,
+    navbar-separators: $light-gray,
+    navbar-dropdown-separators: $light-gray,
+    input-background: $white,
+    input-color: $border-gray,
+    table-nth-row: $light-gray,
+    text: $dark-blue,
+    title: $dark-blue,
+    text-secondary: $gray,
+    border: $border-gray,
+  ),
+  dark: (
+    background: $black,
+    forward-background: $light-black,
+    navbar-text: $light-gray-2,
+    navbar-icons: $light-gray-2,
+    navbar-separators: $light-gray-2,
+    navbar-dropdown-separators: rgba($light-gray-2, 0.1),
+    input-background: $light-black,
+    input-color: rgba($light-gray-2, 0.4),
+    table-nth-row: #b1bcc11a,
+    text: $white,
+    title: $white,
+    text-secondary: $white,
+    border: $border-gray,
+  ),
 );

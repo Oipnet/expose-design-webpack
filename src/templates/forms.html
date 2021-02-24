@@ -3,72 +3,53 @@
   <head></head>
   <body>
     <main class="container">
-      <div class="row">
-        <div
-          class="card is-full-width is-collapse"
-          data-target=".card-content"
-          data-arrow=".icon"
-          data-activator="title,button"
-          data-arrow-rotation="left"
-        >
-          <div class="card-header">
-            <a class="title is-2">Personnalisez votre interface client</a>
-            <a class="button is-icon">
-              <span class="icon is-arrow is-large">
-                <i class="ri-arrow-down-s-line"></i>
-              </span>
-            </a>
-          </div>
-          <div class="card-content">
-            <label class="label has-icon-right">
-              Logo impression
-              <i class="ri-error-warning-line"></i>
-            </label>
-            <p class="control has-icon-right mb-2">
-              <span class="input is-file">
-                <input class="input" type="file" />
-                Importer votre logo
-              </span>
-              <span class="icon is-small">
-                <i class="ri-download-line"></i>
-              </span>
-            </p>
+      <h1 class="title is-1">Form inputs</h1>
+      <label class="label has-icon-right">
+        Logo impression
+        <i class="ri-error-warning-line"></i>
+      </label>
+      <div class="control has-icon-right mb-2">
+        <span class="input is-file">
+          <input class="input" type="file" />
+          Importer votre logo
+        </span>
+        <span class="icon is-small">
+          <i class="ri-download-line"></i>
+        </span>
+      </div>
 
-            <label class="label has-icon-right">
-              Sélectionnez la page d'arrivée
-              <i class="ri-error-warning-line"></i>
-            </label>
-            <div class="control has-icon-right mb-2">
-              <div class="select">
-                <select>
-                  <option value="">One</option>
-                  <option value="">Two</option>
-                  <option value="">Three</option>
-                </select>
-                <span class="icon is-small">
-                  <i class="ri-arrow-down-s-line"></i>
-                </span>
-              </div>
-            </div>
-
-            <label class="label"> Background menu </label>
-            <div class="control has-icon-right mb-2">
-              <button id="background-color-menu" class="input is-color">
-                #FFFFFF
-              </button>
-              <span class="icon is-small">
-                <i class="ri-sip-line"></i>
-              </span>
-            </div>
-
-            <label class="checkbox mb-2">
-              One
-              <input type="checkbox" checked="checked" />
-              <span class="checkmark"></span>
-            </label>
-          </div>
+      <label class="label has-icon-right">
+        Sélectionnez la page d'arrivée
+        <i class="ri-error-warning-line"></i>
+      </label>
+      <div class="control has-icon-right mb-2">
+        <div class="select">
+          <select class="select">
+            <option value="">One</option>
+            <option value="">Two</option>
+            <option value="">Three</option>
+          </select>
+          <span class="icon is-small">
+            <i class="ri-arrow-down-s-line"></i>
+          </span>
         </div>
       </div>
+
+      <label class="label"> Background menu </label>
+      <div class="control has-icon-right mb-2">
+        <button id="background-color-menu" class="input is-color">
+          #FFFFFF
+        </button>
+        <span class="icon is-small">
+          <i class="ri-sip-line"></i>
+        </span>
+      </div>
+
+      <label class="checkbox mb-2">
+        One
+        <input type="checkbox" checked="checked" />
+        <span class="checkmark"></span>
+      </label>
     </main>
   </body>
 </html>

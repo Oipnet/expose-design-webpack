@@ -93,6 +93,15 @@
   .icon:first-child {
     border-radius: 5px 0 0 5px;
   }
+  .icon {
+    height: 100%;
+    align-items: center;
+  }
+
+  .title {
+    margin-bottom: 0.2rem;
+  }
+
   span {
     padding: 1rem;
     @include themed() {
@@ -106,5 +115,19 @@
 
   .icon:first-child {
     background-color: $blue;
+  }
+  .title {
+    color: $blue;
+  }
+}
+
+.message.has-tag.is-orange {
+  border-color: $orange;
+
+  .icon:first-child {
+    background-color: $orange;
+  }
+  .title {
+    color: $orange;
   }
 }

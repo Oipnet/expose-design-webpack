@@ -2,6 +2,7 @@ import "./scss/app.scss";
 import profile from "../assets/images/profile-placeholder.jpg";
 import logo from "../assets/images/logo.png";
 import wave from "../assets/images/wave-background.svg";
+import bienvenue from "../assets/images/bienvenue-illustration.svg";
 
 import TomSelect from "tom-select";
 import { collapse } from "./components/collapse";

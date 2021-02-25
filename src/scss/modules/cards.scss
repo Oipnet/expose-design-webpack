@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   display: flex;
   overflow: hidden;
   width: 100%;
@@ -18,6 +19,11 @@
   &.is-jumbo .title {
     color: $white;
   }
+
+  &.is-overflow {
+    overflow: visible;
+  }
+
   &.is-collapse {
     height: fit-content;
     min-height: 6rem !important;
@@ -57,9 +63,6 @@
   }
   .button .icon {
     color: inherit;
-  }
-
-  &:last-child {
   }
 
   .title {
@@ -119,5 +122,19 @@
   text-align: center;
   @include themed() {
     background-color: t($forward-background);
+  }
+}
+
+.illustration {
+  width: 35%;
+
+  &.is-absolute {
+    position: absolute;
+  }
+  &.is-right {
+    right: -0.5rem;
+  }
+  &.is-top {
+    top: -5rem;
   }
 }

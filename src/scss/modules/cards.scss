@@ -52,7 +52,6 @@
   padding: 1.3rem 1.5rem;
   line-height: 3.3rem;
   @include themed() {
-    border-bottom: 0.2rem solid t($background);
     background-color: t($forward-background);
   }
 
@@ -71,6 +70,10 @@
 
   a {
     cursor: pointer;
+  }
+
+  &:last-child {
+    border-bottom: 0;
   }
 
   .tag.is-small {
@@ -102,17 +105,23 @@
   justify-content: center;
   padding: 3rem;
   transform-origin: top;
-  transition: transform $transition-time;
   @include themed() {
+    border-top: 0.2rem solid t($background);
     background-color: t($forward-background);
   }
 
   &:first-child {
     height: 100%;
+    border-top: 0;
   }
 
   &.is-hidden {
-    transform: scaleY(0);
+    max-height: 0;
+    padding: 0;
+    border: 0;
+  }
+  &.is-hidden * {
+    visibility: hidden;
   }
 }
 

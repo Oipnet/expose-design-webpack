@@ -2,11 +2,13 @@ main.container {
   margin: 11rem 2rem 0 33.5rem;
 }
 
-.columns {
+.row {
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 1.5rem;
+  column-gap: 2.5rem;
 
   &.is-centered {
     align-items: center;
@@ -15,8 +17,21 @@ main.container {
   &.is-centered .column {
     margin-right: 2rem;
   }
-  &.is-centered:last-child {
+  &.is-centered .column:last-child {
     margin-right: 0;
+  }
+
+  &.is-start {
+    justify-content: start;
+  }
+
+  &.is-flex-wrap {
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+  }
+  &.is-flex-wrap .card {
+    max-width: 37.7rem;
   }
 }
 
@@ -26,24 +41,5 @@ main.container {
 
   .row:last-child {
     margin-bottom: 0;
-  }
-}
-
-.row {
-  display: flex;
-  margin-bottom: 1.5rem;
-  column-gap: 2.5rem;
-  
-  &.is-flex-wrap {
-    flex-wrap: wrap;
-    column-gap: 1.5rem;
-    row-gap: 1.5rem;
-  }
-  &.is-flex-wrap .card {
-    max-width: 37.7rem;
-  }
-
-  &.is-centered {
-    justify-content: center;
   }
 }

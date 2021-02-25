@@ -6,7 +6,7 @@ main.container {
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: start;
   margin-bottom: 1.5rem;
   column-gap: 2.5rem;
 
@@ -20,9 +20,8 @@ main.container {
   &.is-centered .column:last-child {
     margin-right: 0;
   }
-
-  &.is-start {
-    justify-content: start;
+  &.is-spaced-evenly {
+    justify-content: space-evenly;
   }
 
   &.is-flex-wrap {

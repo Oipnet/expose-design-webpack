@@ -52,6 +52,12 @@
     color: $color-primary;
   }
 
+  &.has-text-transparent {
+    @include themed() {
+      color: t($forward-background);
+    }
+  }
+
   .icon {
     padding: 0;
   }

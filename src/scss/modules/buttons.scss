@@ -8,7 +8,7 @@
   font-size: 1.6rem;
 
   &.is-small {
-    padding: 0 0.4rem;
+    padding: 0.4rem 0.5rem;
   }
 
   &.is-primary {
@@ -67,6 +67,9 @@
     background: none;
   }
 
+  span:first-child {
+    margin-left: 0 !important;
+  }
   span:last-child {
     margin-left: 0.5rem;
   }

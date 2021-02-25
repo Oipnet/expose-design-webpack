@@ -213,6 +213,63 @@ input:focus + .slider {
   }
 }
 
+.radio {
+  position: relative;
+  display: block;
+  padding-left: 3rem;
+  cursor: pointer;
+  user-select: none;
+  @include themed() {
+    color: t($text);
+  }
+
+  input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    opacity: 0;
+  }
+  input:checked ~ .inner-radio {
+    border: 0;
+    background-color: $blue;
+  }
+}
+
+.inner-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5rem;
+  @include themed() {
+    border: 0.2rem solid t($text);
+    background-color: t($forward-background);
+  }
+
+  &::after {
+    position: absolute;
+    display: none;
+    content: "";
+  }
+}
+.container input:checked ~ .inner-radio::after {
+  display: block;
+}
+.container .inner-radio::after {
+  top: 0.2rem;
+  right: 0.2rem;
+  width: 80%;
+  height: 80%;
+  background-color: $blue;
+  border-radius: 5rem;
+
+  @include themed() {
+    border: 0.3rem solid t($forward-background);
+  }
+}
+
 .has-icon-left {
   .input {
     padding-left: 4rem !important;

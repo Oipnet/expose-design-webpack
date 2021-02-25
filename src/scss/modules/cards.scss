@@ -1,18 +1,19 @@
 .card {
   display: flex;
+  overflow: hidden;
   width: 100%;
   min-height: 20rem;
   flex-basis: auto;
   flex-direction: column;
   flex-grow: 0;
   flex-shrink: 1;
+  border-radius: 0.5rem;
 
   &.is-jumbo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("/assets/images/wave-background.svg?encoding=base64");
   }
   &.is-jumbo .title {
     color: $white;
@@ -43,7 +44,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.3rem 1.5rem;
-  border-radius: 0.5rem 0.5rem 0 0;
   line-height: 3.3rem;
   @include themed() {
     border-bottom: 0.2rem solid t($background);
@@ -60,7 +60,6 @@
   }
 
   &:last-child {
-    border-radius: 0.5rem;
   }
 
   .title {
@@ -80,10 +79,15 @@
 }
 
 .card.is-blue {
+  background-image: url("/assets/images/wave-background.svg?encoding=base64");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   .card-header,
   .card-content,
   .card-footer {
-    background-color: $color-primary;
+    background-color: transparent;
   }
 }
 
@@ -94,7 +98,6 @@
   flex-grow: 1;
   justify-content: center;
   padding: 3rem;
-  border-radius: 0 0 0.5rem 0.5rem;
   transform-origin: top;
   transition: transform $transition-time;
   @include themed() {
@@ -103,7 +106,6 @@
 
   &:first-child {
     height: 100%;
-    border-radius: 0.5rem;
   }
 
   &.is-hidden {
@@ -114,7 +116,6 @@
 .card-footer {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  border-radius: 0 0 0.5rem 0.5rem;
   text-align: center;
   @include themed() {
     background-color: t($forward-background);

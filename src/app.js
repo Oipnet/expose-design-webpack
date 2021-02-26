@@ -12,6 +12,8 @@ import tippy, { roundArrow } from "tippy.js";
 const body = [...document.getElementsByTagName("body")][0];
 const sidebar = document.getElementById("sidebar");
 
+var navMenuLangSelectCreated = false;
+
 body.classList.add("theme--dark");
 
 let themeSwith = document.getElementById("theme-switch", toggleTheme);
@@ -45,6 +47,102 @@ tooltips.forEach((tooltip) => {
     placement: tooltip.dataset.tooltipPlacement,
     maxWidth: 470,
   });
+});
+
+tippy(".navbar-burger .button", {
+  theme: "default",
+  content: `
+    <nav class="navbar-menu">
+      <ul class="nav-items">
+        <a class="button is-small is-primary is-fullwidth is-mobile-only">
+          Créer un marketplace
+        </a>
+
+        <li class="nav-item">
+          <a class="nav-link">
+            Mon compte
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a>Thème light</a>
+          <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider"></span>
+          </label>
+        </li>
+
+        <li class="nav-item is-mobile-only">
+          <a class="nav-link">
+            Messages
+          </a>
+        </li>
+
+        <li class="nav-item is-mobile-only">
+          <a class="nav-link">
+            Notifications
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <select id="nav-menu-language-select"></select>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link">
+            Déconnexion
+          </a>
+        </li>
+      </ul>
+    </nav>
+  `,
+  arrow: false,
+  interactive: true,
+  trigger: "click",
+  offset: [-80, 10],
+  allowHTML: true,
+  onMount(instance) {
+    document
+      .getElementById("theme-switch")
+      .addEventListener("click", toggleTheme);
+
+    if (navMenuLangSelectCreated == false) {
+      new TomSelect("#nav-menu-language-select", {
+        create: false,
+        valueField: "id",
+        items: [1],
+        controlInput: "<input/>",
+        hideSelected: true,
+        options: [
+          { id: 1, option: "Français", flag: "fr" },
+          { id: 2, option: "English", flag: "gb" },
+        ],
+        render: {
+          option(data, escape) {
+            return (
+              `${
+                '<div class="language-option">' +
+                '<span class="flag-icon flag-icon-'
+              }${escape(data.flag)}"></span>` +
+              `<span>${escape(data.option)}</span>` +
+              `</div>`
+            );
+          },
+          item(data, escape) {
+            return (
+              `${
+                '<div class="language-option">' +
+                '<span class="flag-icon flag-icon-'
+              }${escape(data.flag)}"></span>` +
+              `<span>${escape(data.option)}</span>` +
+              `</div>`
+            );
+          },
+        },
+      });
+      navMenuLangSelectCreated = true;
+    }
+  },
 });
 
 tippy("#messages", {

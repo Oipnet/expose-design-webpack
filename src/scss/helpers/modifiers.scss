@@ -29,3 +29,26 @@
     fill: t($forward-background);
   }
 }
+
+.is-hidden-tablet {
+  @include respond-until(lg) {
+    display: none !important;
+  }
+}
+.is-hidden-mobile {
+  @include respond-until(s) {
+    display: none !important;
+  }
+}
+.is-hidden-small-tablet {
+  @include respond-until(m) {
+    display: none !important;
+  }
+}
+.is-mobile-only {
+  display: none !important;
+
+  @include respond-until(s) {
+    display: block !important;
+  }
+}

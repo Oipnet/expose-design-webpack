@@ -10,6 +10,7 @@ import { datatable } from "./components/table";
 import tippy, { roundArrow } from "tippy.js";
 
 const body = [...document.getElementsByTagName("body")][0];
+const sidebar = document.getElementById("sidebar");
 
 body.classList.add("theme--dark");
 
@@ -19,6 +20,13 @@ function toggleTheme(checkbox) {
   body.classList.toggle("theme--default");
   body.classList.toggle("theme--dark");
 }
+
+document.getElementById("unfold-sidebar").addEventListener("click", () => {
+  sidebar.classList.add("is-unfolded");
+});
+document.getElementById("fold-sidebar").addEventListener("click", () => {
+  sidebar.classList.remove("is-unfolded");
+});
 
 collapse();
 

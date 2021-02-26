@@ -51,8 +51,19 @@
   height: inherit;
   align-items: inherit;
 
-  @include respond-until(lg) {
-    display: none !important;
+  .navbar-item {
+    @include respond-until(lg) {
+      display: none !important;
+    }
+  }
+
+  .is-visible-tablet {
+    @include respond-to(md) {
+      display: inline-flex !important;
+    }
+    @include respond-to(l) {
+      display: inline-flex !important;
+    }
   }
 }
 .navbar-burger {

@@ -12,6 +12,9 @@
   @include themed() {
     background-color: t($forward-background);
   }
+  @include respond-until(lg) {
+    padding-left: 9.5rem;
+  }
 
   .navbar-end,
   .navbar-start {
@@ -58,10 +61,7 @@
   }
 
   .is-visible-tablet {
-    @include respond-to(md) {
-      display: inline-flex !important;
-    }
-    @include respond-to(l) {
+    @include respond-from(sm) {
       display: inline-flex !important;
     }
   }
@@ -179,11 +179,30 @@
 
   border-radius: 0 2.5rem 2.5rem 0;
 
+  @include respond-until(lg) {
+    position: fixed;
+    overflow: hidden;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 0 1rem 1rem 0;
+  }
+
   .brand {
     display: flex;
     width: 15rem;
     align-self: center;
     margin-top: 2rem;
+  }
+
+  .burger {
+    justify-content: center;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    color: $white;
+
+    @include respond-from(lg) {
+      display: none;
+    }
   }
 }
 

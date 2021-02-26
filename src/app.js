@@ -231,3 +231,15 @@ new TomSelect("#language-select", {
     },
   },
 });
+
+new TomSelect("#select", {
+  create: false,
+  valueField: "id",
+  items: [1],
+  controlInput: "<input/>",
+  hideSelected: true,
+  options: [
+    { id: 1, option: "Français", flag: "fr" },
+    { id: 2, option: "English", flag: "gb" },
+  ],
+});

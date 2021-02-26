@@ -50,12 +50,43 @@
   }
 }
 
+.select {
+  display: inline-flex;
+  align-items: center;
+}
 .input,
-.select select {
+.ts-control .ts-input,
+.ts-dropdown {
   @include themed() {
     border: 0.1rem solid t($input-color);
-    background-color: t($forward-background);
+    background-color: t($forward-background) !important;
     color: t($input-color);
+  }
+}
+.ts-control {
+  display: inline-flex;
+  align-items: center;
+
+  .ts-input {
+    display: inline-flex !important;
+    width: 30rem;
+    height: 4rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: none !important;
+  }
+  .ts-input::after {
+    display: none !important;
+  }
+}
+.ts-dropdown {
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
+}
+.ts-dropdown-content .option {
+  background-color: inherit;
+  @include themed() {
+    color: t($text);
   }
 }
 

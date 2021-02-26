@@ -4,6 +4,9 @@
     z-index: 100;
     margin-left: -3.5rem;
   }
+  &.has-icon-left {
+    position: relative;
+  }
   &.is-fullwidth .input {
     width: 100%;
   }
@@ -78,6 +81,15 @@
   border: 0 !important;
   @include themed() {
     background-color: t($background);
+  }
+  @include respond-until(xs) {
+    width: 15rem;
+  }
+  @include respond-from(xs) {
+    width: 20rem;
+  }
+  @include respond-from(m) {
+    width: 30rem;
   }
 }
 
@@ -274,9 +286,9 @@ input:focus + .slider {
   .input {
     padding-left: 4rem !important;
   }
-
-  .icon.is-small {
-    margin-bottom: 4px;
-    margin-left: -29.4rem;
+  .icon {
+    position: absolute;
+    top: 0.8rem;
+    left: 1rem;
   }
 }

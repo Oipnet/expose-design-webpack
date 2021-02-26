@@ -46,6 +46,25 @@
   }
 }
 
+.navbar-end .hidden-mobile {
+  display: inherit;
+  height: inherit;
+  align-items: inherit;
+
+  @include respond-until(lg) {
+    display: none !important;
+  }
+}
+.navbar-burger {
+  @include respond-from(lg) {
+    display: none !important;
+  }
+
+  .navbar-item {
+    padding-right: 0 !important;
+  }
+}
+
 .dropdown-list li {
   padding-bottom: 0.8rem;
   margin-bottom: 0.8rem;

@@ -85,7 +85,12 @@ tippy(".navbar-burger .button", {
         </li>
 
         <li class="nav-item">
-          <select id="nav-menu-language-select"></select>
+          <div class="select has-icon-right">
+            <select id="nav-menu-language-select"></select>
+            <span class="icon is-small">
+              <i class="ri-arrow-down-s-line"></i>
+            </span>
+          </div>
         </li>
 
         <li class="nav-item">

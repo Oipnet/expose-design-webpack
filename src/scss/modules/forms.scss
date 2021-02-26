@@ -51,8 +51,13 @@
 }
 
 .select {
+  position: relative;
   display: inline-flex;
   align-items: center;
+}
+.select.has-icon-right .icon {
+  position: absolute;
+  right: 1.5rem;
 }
 .input,
 .ts-control .ts-input,

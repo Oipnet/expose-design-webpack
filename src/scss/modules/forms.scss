@@ -111,7 +111,7 @@
   height: 100%;
   border: 0 !important;
   @include themed() {
-    background-color: t($background);
+    background-color: t($background) !important;
   }
   @include respond-until(xs) {
     width: 15rem;

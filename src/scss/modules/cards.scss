@@ -3,6 +3,7 @@
   display: flex;
   overflow: hidden;
   width: 100%;
+  max-width: 50rem;
   min-height: 20rem;
   flex-basis: auto;
   flex-direction: column;
@@ -12,6 +13,7 @@
 
   &.is-jumbo {
     display: flex;
+    max-width: 35rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -37,7 +39,12 @@
     transform: rotate(180deg);
   }
   &.is-grow {
-    flex: 0 0 50%;
+    max-width: 70rem;
+    flex: 1 0 50%;
+
+    @include respond-from(sm) {
+      min-width: 60rem;
+    }
   }
 
   > * {

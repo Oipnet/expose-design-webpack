@@ -13,6 +13,12 @@ main.container {
   justify-content: start;
   margin-bottom: 1.5rem;
   column-gap: 2.5rem;
+  row-gap: 1.5rem;
+
+  @include respond-until(xl) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   &.is-centered {
     align-items: center;

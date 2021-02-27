@@ -249,3 +249,19 @@ new TomSelect("#select", {
     { id: 2, option: "English", flag: "gb" },
   ],
 });
+
+[...document.getElementsByClassName("modal")].forEach((modal) => {
+  let activator = document.getElementById("#" + modal.dataset.activator);
+  let dimmer = document.getElementById("#" + modal.dataset.dimmer);
+  let closeButton = document.getElementById("#" + modal.dataset.closeButton);
+
+  activator.addEventListener("click", () => {
+    modal.classList().remove(".is-hidden");
+    dimmer.classList().remove(".is-hidden");
+  });
+
+  closeButton.addEventListener("click", () => {
+    modal.classList().add(".is-hidden");
+    dimmer.classList().add(".is-hidden");
+  });
+});

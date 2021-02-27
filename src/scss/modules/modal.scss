@@ -1,0 +1,77 @@
+.modal {
+  position: absolute;
+  z-index: 2000;
+  top: 30%;
+  left: 35%;
+  width: 70rem;
+  border: 0.1rem solid;
+  border-radius: 0.5rem;
+
+  @include themed() {
+    border-color: t($text-secondary);
+    background-color: t($forward-background);
+  }
+}
+
+.modal-dimmer {
+  position: absolute;
+  z-index: 1500;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  @include themed() {
+    background-color: rgba(t($background), 0.5);
+  }
+}
+
+.modal,
+.modal-dimmer {
+  &.is-hidden {
+    display: none;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-bottom: 0.1rem solid;
+  font-weight: bold;
+
+  @include themed() {
+    border-color: t($text-secondary);
+    color: t($text);
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+}
+
+.modal-content,
+.modal-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.modal-footer {
+  padding-bottom: 5rem;
+
+  .button {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  a {
+    @include themed() {
+      color: t($text-secondary);
+    }
+  }
+
+  *:last-child {
+    margin-top: 2rem;
+  }
+}

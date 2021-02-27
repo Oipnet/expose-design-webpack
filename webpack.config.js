@@ -104,8 +104,8 @@ let config = {
       template: "src/templates/stepper.html",
     }),
     new HtmlWebpackPlugin({
-      filename: "tooltips.html",
-      template: "src/templates/tooltips.html",
+      filename: "modal.html",
+      template: "src/templates/modal.html",
     }),
     new HtmlWebpackPlugin({
       filename: "tables.html",

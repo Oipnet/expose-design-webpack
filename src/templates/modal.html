@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <main class="container">
+      <button id="modal-button" class="button is-large is-primary">
+        Launch modal
+      </button>
+      <div
+        class="modal is-hidden"
+        data-activator="modal-button"
+        data-dimmer="dimmer"
+        data-close-button="modal-close"
+      >
+        <div class="modal-header">
+          <span>Envoyer la commande au fournisseur</span>
+          <a id="modal-close" class="icon is-small">
+            <i class="ri-close-circle-line"></i>
+          </a>
+        </div>
+        <div class="modal-content">
+          <h2 class="title is-2">
+            Voulez-vous vraiment confirmer la commande ?
+          </h2>
+          <p>Le bon de commande sera envoyé par courriel au fournisseur.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="button is-primary">Envoyer</button>
+          <a href="">Retour</a>
+        </div>
+      </div>
+      <div class="modal-dimmer is-hidden"></div>
+    </main>
+  </body>
+</html>

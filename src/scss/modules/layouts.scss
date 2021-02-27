@@ -17,7 +17,6 @@ main.container {
 
   @include respond-until(xl) {
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   &.is-centered {
@@ -30,17 +29,20 @@ main.container {
   &.is-centered .column:last-child {
     margin-right: 0;
   }
+  &.is-centered-mobile {
+    @include respond-until(xl) {
+      justify-content: center;
+    }
+  }
   &.is-spaced-evenly {
     justify-content: space-evenly;
   }
-
-  &.is-flex-wrap {
+  &.is-wrap {
     flex-wrap: wrap;
-    column-gap: 1.5rem;
-    row-gap: 1.5rem;
   }
-  &.is-flex-wrap .card {
-    max-width: 37.7rem;
+
+  .row {
+    margin: 0;
   }
 }
 

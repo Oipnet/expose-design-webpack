@@ -25,7 +25,9 @@ $navbar-dropdown-separators: "navbar-dropdown-separators";
 $input-background: "input-background";
 $input-color: "input-color";
 $button-dashed: "button-dashed";
-$table-nth-row: "table-nth-row";
+$table-header: "table-header";
+$table-odd-color: "table-odd-color";
+$table-even-color: "table-even-color";
 $text: "text";
 $title: "title";
 $text-secondary: "text-secondary";
@@ -42,7 +44,9 @@ $themes: (
     input-background: $white,
     input-color: $border-gray,
     button-dashed: $blue,
-    table-nth-row: $light-gray,
+    table-header: $border-gray,
+    table-odd-color: $white,
+    table-even-color: $light-gray,
     text: $dark-blue,
     title: $dark-blue,
     text-secondary: $border-gray,
@@ -58,7 +62,9 @@ $themes: (
     input-background: $light-black,
     input-color: rgba($light-gray-2, 0.4),
     button-dashed: $light-gray-2,
-    table-nth-row: #b1bcc11a,
+    table-header: darken($black, 5%),
+    table-odd-color: $light-black,
+    table-even-color: lighten($light-black, 5%),
     text: $white,
     title: $white,
     text-secondary: rgba($light-gray-2, 0.4),

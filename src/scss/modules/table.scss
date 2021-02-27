@@ -4,9 +4,13 @@
   justify-content: space-between;
 }
 
-.table {
+.table,
+.dataTable-wrapper {
+  overflow: hidden;
   width: 100%;
   margin: 1rem 0;
+  border-radius: 0.5rem;
+
   @include themed() {
     color: t($text) !important;
   }
@@ -19,7 +23,7 @@
   thead tr {
     font-weight: bold;
     @include themed() {
-      background-color: t($forward-background);
+      background-color: t($table-header);
     }
   }
   thead tr th {
@@ -38,7 +42,12 @@
   }
   tbody tr:nth-child(odd) {
     @include themed() {
-      background-color: t($table-nth-row);
+      background-color: t($table-odd-color);
+    }
+  }
+  tbody tr:nth-child(even) {
+    @include themed() {
+      background-color: t($table-even-color);
     }
   }
 }

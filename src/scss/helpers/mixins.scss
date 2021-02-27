@@ -47,11 +47,11 @@
           @content;
         }
       } @else {
-        $next_breakpoint: nth($breakpoints, $i + 1);
-        $next_name: nth($next_breakpoint, 1);
-        $next_value: nth($next_breakpoint, 2);
+        $next-breakpoint: nth($breakpoints, $i + 1);
+        $next-name: nth($next-breakpoint, 1);
+        $next-value: nth($next-breakpoint, 2);
 
-        @media (min-width: #{$value}) and (max-width: #{$next_value - 1px}) {
+        @media (min-width: #{$value}) and (max-width: #{$next-value - 1px}) {
           @content;
         }
       }

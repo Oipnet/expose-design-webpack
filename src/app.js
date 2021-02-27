@@ -46,6 +46,7 @@ tooltips.forEach((tooltip) => {
     content: tooltip.dataset.tooltipContent,
     placement: tooltip.dataset.tooltipPlacement,
     maxWidth: 470,
+    touch: true,
   });
 });
 
